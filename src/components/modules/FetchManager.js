@@ -47,6 +47,10 @@ export const editGroceryList = (editTask) => {
     }).then(res => res.json())
 };
 
+export const getAllFoodItems = () => {
+    return fetch(`${remoteURL}/allFoodItems`)
+    .then(result => result.json())
+  }
 
 
 

@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom'
 
 
 //?how does this work with out props again?or is this just a parameter? id like to learn it that way first if possible, but im not sure if this is the same thing. 
-export const GroceryCard = (groceryList, deleteGroceryList) => {
+export const GroceryCard = ({ groceryList, handleDeleteGroceryList }) => {
   return (
       <>
     <div className="contentHolderLeft">
@@ -25,17 +25,17 @@ export const GroceryCard = (groceryList, deleteGroceryList) => {
 
         <div className="cardButtonContainers">
 {/* delete */}
-        <button type="button" className="cardButton" onClick={() => deleteGroceryList(groceryList.id)}>Delete</button>
+        <button type="button" className="cardButton" onClick={() => handleDeleteGroceryList(groceryList.id)}>Delete</button>
 
 {/* edit */}
-        <Link to={`/${groceryList.id}/edit`}>
+        <Link to={`/groceryLists/${groceryList.id}/edit`}>
             <button className="cardButton">✏️</button>
         </Link>
         </div>
     </div>
     {/* <div className="goShoppingButton">
-        <Link to={`/????/${propsfillthislater.id}/edit`}>
-            <button className="cardButton">✏️</button>
+        <Link to={`/groceryLists/${groceryLists.id}/goshopping`}>
+            <button className="cardButton">edit</button>
         </Link>
     </div> */}
     </>

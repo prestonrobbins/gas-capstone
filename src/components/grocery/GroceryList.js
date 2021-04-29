@@ -28,7 +28,7 @@ export const GroceryList = () => {
       }, []);
 //TODO ??? what is history doing here? still confused on it.
 //TODO why are we not defining edit here? we have create, delete, the useState function and all but not that.
-console.log(handleDeleteGroceryList)
+
       return(
           <>
             <div className="listContentContainer">
@@ -43,11 +43,11 @@ console.log(handleDeleteGroceryList)
             <div className="displayGroceryLists">
 
                 {groceryLists
-                .map(groceryLists =>
+                .map(groceryListItem =>
                 <GroceryCard
-                    key={groceryLists.id}
-                    groceryLists={groceryLists}
-                    deleteGroceryList={handleDeleteGroceryList}
+                    key={groceryListItem.id}
+                    groceryList={groceryListItem}
+                    handleDeleteGroceryList={handleDeleteGroceryList}
                 />
                 )}       
             </div>
@@ -58,4 +58,3 @@ console.log(handleDeleteGroceryList)
 
 }
 //TODO id love to know if im naming things well with in my project, the last time bryan tweeked that on my project it really helped.
-//TODO LAST THING YOU WERE ON WAS GETTING DELETE GROCERY LIST TO WORK, CLICK TO SEE THE ERROR AND GO FROM THERE
