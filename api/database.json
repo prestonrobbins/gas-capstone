@@ -1,68 +1,64 @@
 {
-    "users": [
-        {
-            "email": "preston@gmail.com",
-            "name": "preston",
-            "id": 1
-        }
-    ],
-
-
-    "userGroceryList": [
-        {
-            "id": 1,
-            "userId": 1,
-            "name": "healthy list",
-            "storeId": 1,
-            "selectGroceryItemsId": 1
-        }
-    ],
-
-
-    "selectedGroceryItems":[
-        {
-            "id": 1,
-            "foodItemId": 1
-        }
-    ],
-
-
-    "quantityNeeded":[
-        {
-            "id": 1,
-            "foodItemId": 1,
-            "quantity": 3
-        }
-    ],
-
-
-    "store":[
-        {
-            "id": 1,
-            "name": "publix",
-            "address": "123 main street"
-        }
-    ],
-
-
-    "allFoodItems":[
-        {
-            "id": 1,
-            "name": "bananas",
-            "price": 3.99,
-            "aisleId": 1,
-            "filter": "fruit",
-            "foodItemImageURL": ""
-        }
-    ],
-
-
-    "aisles":[
-        {
-            "id": 1,
-            "name": 1
-        }
-    ]
-
-
+  "users": [
+    {
+      "email": "preston@gmail.com",
+      "name": "preston",
+      "id": 1
+    },
+    {
+      "email": "prestonshottss@gmail.com",
+      "name": "preston shotts",
+      "id": 2
+    }
+  ],
+  "userGroceryLists": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "healthy list",
+      "storeId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "unhealthy list",
+      "storeId": 1
+    }
+  ],
+  "selectedGroceryItems": [
+    {
+      "id": 1,
+      "foodItemId": 1,
+      "userGroceriesListId": 1
+    }
+  ],
+  "store": [
+    {
+      "id": 1,
+      "name": "publix",
+      "address": "123 main street"
+    }
+  ],
+  "allFoodItems": [
+    {
+      "id": 1,
+      "name": "bananas",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "fruit",
+      "foodItemImageURL": ""
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fruit"
+    }
+  ],
+  "aisles": [
+    {
+      "id": 1,
+      "name": 1
+    }
+  ]
 }
