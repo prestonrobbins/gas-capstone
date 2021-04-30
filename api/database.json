@@ -34,29 +34,29 @@
   "selectedGroceryItems": [
     {
       "id": 1,
-      "foodItemId": 1,
+      "allFoodItemsId": 1,
       "userGroceriesListId": 1
     },
     {
       "id": 2,
-      "foodItemId": 4,
+      "allFoodItemsId": 4,
       "userGroceriesListId": 1
     },
     {
       "id": 3,
-      "foodItemId": 6,
+      "allFoodItemsId": 6,
       "userGroceriesListId": 1
     },
     {
       "id": 4,
-      "foodItemId": 6,
+      "allFoodItemsId": 6,
       "userGroceriesListId": 1
     },
     {
       "id": 5,
-      "foodItemId": 20,
+      "allFoodItemsId": 20,
       "userGroceriesListId": 1
-    },
+    }
 
 
   ],
@@ -79,7 +79,7 @@
       "id": 3,
       "name": "windixie ",
       "address": "908 decent movie street"
-    },
+    }
   ],
 
 

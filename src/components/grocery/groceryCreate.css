@@ -13,3 +13,8 @@ div{
     overflow: scroll;
     height: 400px;
 }
+
+.userListCardHolder{
+    overflow: scroll;
+    height: 400px;
+}

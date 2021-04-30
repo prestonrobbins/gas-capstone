@@ -52,6 +52,11 @@ export const getAllFoodItems = () => {
     .then(result => result.json())
   }
 
+export const getFoodItemById = (groceryListId) => {
+    return fetch(`${remoteURL}/selectedGroceryItems?userGroceryList=${groceryListId}&_expand=allFoodItems`)
+    .then(result => result.json())
+}
+
 
 
 
