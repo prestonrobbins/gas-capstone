@@ -1,68 +1,410 @@
 {
-    "users": [
-        {
-            "email": "preston@gmail.com",
-            "name": "preston",
-            "id": 1
-        }
-    ],
+  "users": [
+    {
+      "email": "preston@gmail.com",
+      "name": "preston",
+      "id": 1
+    },
+    {
+      "email": "prestonshottss@gmail.com",
+      "name": "preston shotts",
+      "id": 2
+    },
+    {
+      "email": "brenda@gmail.com",
+      "name": "brenda long",
+      "id": 3
+    }
+  ],
 
 
-    "userGroceryList": [
-        {
-            "id": 1,
-            "userId": 1,
-            "name": "healthy list",
-            "storeId": 1,
-            "selectGroceryItemsId": 1
-        }
-    ],
+
+  "userGroceryLists": [
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "unhealthy list",
+      "storeId": 1
+    }
+  ],
 
 
-    "selectedGroceryItems":[
-        {
-            "id": 1,
-            "foodItemId": 1
-        }
-    ],
 
 
-    "quantityNeeded":[
-        {
-            "id": 1,
-            "foodItemId": 1,
-            "quantity": 3
-        }
-    ],
+  "selectedGroceryItems": [
+    {
+      "id": 1,
+      "allFoodItemsId": 1,
+      "userGroceriesListId": 1
+    },
+    {
+      "id": 2,
+      "allFoodItemsId": 4,
+      "userGroceriesListId": 1
+    },
+    {
+      "id": 3,
+      "allFoodItemsId": 6,
+      "userGroceriesListId": 1
+    },
+    {
+      "id": 4,
+      "allFoodItemsId": 6,
+      "userGroceriesListId": 1
+    },
+    {
+      "id": 5,
+      "allFoodItemsId": 20,
+      "userGroceriesListId": 1
+    }
 
 
-    "store":[
-        {
-            "id": 1,
-            "name": "publix",
-            "address": "123 main street"
-        }
-    ],
+  ],
 
 
-    "allFoodItems":[
-        {
-            "id": 1,
-            "name": "bananas",
-            "price": 3.99,
-            "aisleId": 1,
-            "filter": "fruit",
-            "foodItemImageURL": ""
-        }
-    ],
 
 
-    "aisles":[
-        {
-            "id": 1,
-            "name": 1
-        }
-    ]
+  "store": [
+    {
+      "id": 1,
+      "name": "Publix",
+      "address": "123 Main Street"
+    },
+    {
+      "id": 2,
+      "name": "Kroger",
+      "address": "430 Spooky Streets"
+    },
+    {
+      "id": 3,
+      "name": "windixie ",
+      "address": "908 decent movie street"
+    }
+  ],
 
 
+
+
+  "allFoodItems": [
+    {
+      "id": 1,
+      "name": "bananas",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "fruit",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 2,
+      "name": "apples",
+      "price": 2.99,
+      "aisleId": 2,
+      "categoryID": "fruit",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 3,
+      "name": "grapes",
+      "price": 3.30,
+      "aisleId": 1,
+      "categoryID": "fruit",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 4,
+      "name": "chicken breast",
+      "price": 5.67,
+      "aisleId": 5,
+      "categoryID": "meat",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 5,
+      "name": "lettuce",
+      "price": 2.50,
+      "aisleId": 3,
+      "categoryID": "veggies",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 6,
+      "name": "gold fish",
+      "price": 1.29,
+      "aisleId": 8,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 7,
+      "name": "gum",
+      "price": 3.99,
+      "aisleId": 8,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 8,
+      "name": "pork",
+      "price": 5.99,
+      "aisleId": 5,
+      "categoryID": "meat",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 9,
+      "name": "tomato",
+      "price": 2.89,
+      "aisleId": 3,
+      "categoryID": "veggies",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 10,
+      "name": "avocado",
+      "price": 3.99,
+      "aisleId": 2,
+      "categoryID": "fruit",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 11,
+      "name": "protein bar",
+      "price": 3.99,
+      "aisleId": 8,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 12,
+      "name": "butter",
+      "price": 3.99,
+      "aisleId": 10,
+      "categoryID": "dairy",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 13,
+      "name": "austronaut food",
+      "price": 3.99,
+      "aisleId": 8,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 14,
+      "name": "milk",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "dairy",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 15,
+      "name": "icecream",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 16,
+      "name": "gummie bears",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 17,
+      "name": "sour patch kids",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 18,
+      "name": "swedish fish",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 19,
+      "name": "steak",
+      "price": 3.99,
+      "aisleId": 5,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 20,
+      "name": "pinneaple",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 21,
+      "name": "juice",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 22,
+      "name": "yogurt",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 23,
+      "name": "bread",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 24,
+      "name": "pasta",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 25,
+      "name": "cheese",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 26,
+      "name": "celery",
+      "price": 3.99,
+      "aisleId": 1,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 27,
+      "name": "blueberries",
+      "price": 3.99,
+      "aisleId": 2,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 28,
+      "name": "strawberries",
+      "price": 3.99,
+      "aisleId": 2,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 29,
+      "name": "beef jerky",
+      "price": 3.99,
+      "aisleId": 5,
+      "categoryID": "snacks",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 30,
+      "name": "dakota",
+      "price": 3.99,
+      "aisleId": 10,
+      "categoryID": "meat",
+      "foodItemImageURL": ""
+    },
+    {
+      "id": 31,
+      "name": "duck",
+      "price": 3.99,
+      "aisleId": 10,
+      "categoryID": "meat",
+      "foodItemImageURL": ""
+    }
+  ],
+
+
+
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "fruit"
+    },
+    {
+      "id": 2,
+      "name": "veggies"
+    },
+    {
+      "id": 3,
+      "name": "meat"
+    },
+    {
+      "id": 4,
+      "name": "snacks"
+    },
+    {
+      "id": 5,
+      "name": "misc"
+    }
+  ],
+
+
+
+
+  "aisles": [
+    {
+      "id": 1,
+      "name": 1
+    },
+    {
+      "id": 2,
+      "name": 2
+    },
+    {
+      "id": 3,
+      "name": 3
+    },
+    {
+      "id": 4,
+      "name": 4
+    },
+    {
+      "id": 5,
+      "name": 5
+    },
+    {
+      "id": 6,
+      "name": 6
+    },
+    {
+      "id": 7,
+      "name": 7
+    },
+    {
+      "id": 8,
+      "name": 8
+    },
+    {
+      "id": 9,
+      "name": 9
+    },
+    {
+      "id": 10,
+      "name": 10
+    }
+  ]
 }
