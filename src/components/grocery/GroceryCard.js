@@ -29,7 +29,7 @@ export const GroceryCard = ({ groceryList, handleDeleteGroceryList }) => {
 
 {/* edit */}
         <Link to={`/groceryLists/${groceryList.id}/edit`}>
-            <button className="cardButton">✏️</button>
+            <button className="cardButton">Edit</button>
         </Link>
         </div>
     </div>
