@@ -7,6 +7,7 @@ div{
 .groceryEditHolder{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .storeItemsScroll{
@@ -18,3 +19,15 @@ div{
     overflow: scroll;
     height: 400px;
 }
+
+.storeHeader{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.categories{
+    height:30px;
+    margin-top:15px;
+}
+

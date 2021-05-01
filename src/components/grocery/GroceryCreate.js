@@ -36,7 +36,9 @@ export const GroceryListCreateForm = () => {
 
         <div className="groceryEditHolder">
           <div className="userList">
+            <div>
             <h3>Your List</h3>
+            </div>
             <div className="userListCardHolder">
                 {userGroceryList.length > 0 &&
                 userGroceryList.map(userFoodItem => 
@@ -52,13 +54,13 @@ export const GroceryListCreateForm = () => {
             <div className="storeHeader">
             <h3>Choose Your Items</h3>
 
-            <label for="categoryChoose">Choose a category:</label>
-            <select id="Categories">
-              <option value="fruit">Fruit</option> 1 2
-              <option value="veggies">Veggies</option>3 4
-              <option value="meat">Meat</option> 5
-              <option value="snacks">Snacks</option> 8
-              <option value="dairy">Dairy</option>10
+            <select class="categories">
+              <option value="category">Category</option>
+              <option value="fruit">Fruit</option>
+              <option value="veggies">Veggies</option>
+              <option value="meat">Meat</option>
+              <option value="snacks">Snacks</option>
+              <option value="dairy">Dairy</option>
               </select>
               </div>
               <div className="storeItemsScroll">
