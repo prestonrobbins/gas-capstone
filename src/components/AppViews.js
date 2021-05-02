@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import { GroceryList } from "./grocery/GroceryList"
 import { GroceryListEditForm } from "./grocery/GroceryEdit"
 import { GroceryListCreateForm } from "./grocery/GroceryCreate"
+import { StoreList } from "./store/StoreList"
 import { userStorageKey } from "../components/auth/authSettings"
 
 
@@ -31,6 +32,11 @@ export const AppViews = () => {
       <Route exact path="/GroceryLists/create">
         <GroceryListCreateForm />
       </Route>
+
+      <Route exact path="/storeList">
+        <StoreList />
+      </Route>
+
 
       {/* <Route exact path="/GroceryCreate">
         <GroceryCreate />

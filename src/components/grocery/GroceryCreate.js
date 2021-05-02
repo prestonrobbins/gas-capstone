@@ -37,7 +37,12 @@ export const GroceryListCreateForm = () => {
         <div className="groceryEditHolder">
           <div className="userList">
             <div>
-            <h3>Your List</h3>
+            <form>
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+</form>
             </div>
             <div className="userListCardHolder">
                 {userGroceryList.length > 0 &&
@@ -48,6 +53,7 @@ export const GroceryListCreateForm = () => {
                   />
                     )}
               </div>
+              <button className="addToList" onClick={() => {console.log("you clicked me")}}>save list</button>
           </div>
 
           <div className="storeList">
@@ -69,7 +75,7 @@ export const GroceryListCreateForm = () => {
                 <AllFoodItemsCard
                     key={foodItem.id}
                     name={foodItem.name}
-                    price={foodItem.price}   
+                    price={foodItem.price} 
                 />
                 )} 
                 </div>

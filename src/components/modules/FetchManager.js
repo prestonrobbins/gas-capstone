@@ -57,7 +57,15 @@ export const getFoodItemById = (groceryListId) => {
     .then(result => result.json())
 }
 
+export const getAllStores = () => {
+    return fetch(`${remoteURL}/stores`)
+    .then(result => result.json())
+}
 
+export const getStoreById = (id) => {
+    return fetch(`${remoteURL}/stores/${id}`)
+    .then(result => result.json())
+}
 
 
    //? embed vs extract

@@ -18,6 +18,7 @@ div{
 .userListCardHolder{
     overflow: scroll;
     height: 400px;
+    border: 3px red solid !important;
 }
 
 .storeHeader{
@@ -30,4 +31,6 @@ div{
     height:30px;
     margin-top:15px;
 }
+
+
 
