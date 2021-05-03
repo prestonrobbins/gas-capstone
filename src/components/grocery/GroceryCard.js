@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
+import { getStoreById } from '../modules/FetchManager'
 //!import css
 
 
 //?how does this work with out props again?or is this just a parameter? id like to learn it that way first if possible, but im not sure if this is the same thing. 
 export const GroceryCard = ({ groceryList, handleDeleteGroceryList }) => {
+
   return (
       <>
     <div className="contentHolderLeft">
  {/* name */}
         <h3><span className="cardListName">
-            Healthy List
-            {/* {props.task.ListName????} */}
+           {groceryList.name}
         </span></h3>
         
 {/* store name */}
         <h3><span className="cardStoreName">
-            Publix
-            {/* {props.task.StoreName????} */}
+            {groceryList.store.name}
         </span></h3>
 
         <div className="cardButtonContainers">

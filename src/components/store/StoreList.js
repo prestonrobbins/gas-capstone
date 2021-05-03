@@ -6,27 +6,27 @@ import { getStoreById, getAllStores, createGroceryList } from "../modules/FetchM
 
 export const StoreList = (user) => {
   const [stores, setStores] = useState([]);
-  const [userGroceryList, setUserGroceryList] = useState({
-    id: 1,
-    name: "",
-    storeId: 0,
-    userId: parseInt(sessionStorage.getItem("app_user_id"))
-});
+//   const [userGroceryList, setUserGroceryList] = useState({
+//     id: 1,
+//     name: "",
+//     storeId: 0,
+//     userId: parseInt(sessionStorage.getItem("app_user_id"))
+// });
 
-const handleControlledInputChange = (evt) => {
-    const newLocation = { ...userGroceryList }
-    let selectedVal = evt.target.value
-    // forms always provide values as strings. But we want to save the ids as numbers.
-    if (evt.target.id.includes("Id")) {
-        selectedVal = parseInt(selectedVal)
-    }
+// const handleControlledInputChange = (evt) => {
+//     // const newLocation = { ...userGroceryList }
+//     let selectedVal = evt.target.value
+//     // forms always provide values as strings. But we want to save the ids as numbers.
+//     if (evt.target.id.includes("Id")) {
+//         selectedVal = parseInt(selectedVal)
+//     }
     /* Location is an object with properties.
     Set the property to the new value
     using object bracket notation. */
     //TODO newUserGroceryList[evt.target.id] = selectedVal
     // update state
     //TODO setUserGroceryList(newUserGroceryList)
-}
+// }
 
 // const handleClickSaveUserGroceryList = (event) => {
 //     event.preventDefault()
@@ -35,7 +35,8 @@ const handleControlledInputChange = (evt) => {
 //     }
 
   const getStoreListReturn = () => {
-    return getAllStores().then((storesFromAPI) => {
+    return getAllStores()
+    .then((storesFromAPI) => {
       setStores(storesFromAPI);
     });
   };

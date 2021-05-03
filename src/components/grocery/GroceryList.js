@@ -16,7 +16,7 @@ export const GroceryList = () => {
         .then(() => getAllGroceryLists().then(setGroceryList))
     };
 
-    const getGroceryLists = () =>{
+    const getGroceryLists = () => {
         return getAllGroceryLists()
         .then(GroceryListFromAPI => {
             setGroceryList(GroceryListFromAPI)
@@ -26,8 +26,6 @@ export const GroceryList = () => {
     useEffect(() => {
         getGroceryLists();
       }, []);
-//TODO ??? what is history doing here? still confused on it.
-//TODO why are we not defining edit here? we have create, delete, the useState function and all but not that.
 
       return(
           <>
@@ -36,7 +34,7 @@ export const GroceryList = () => {
               <h3>Your Lists</h3>
               <button type="button"
                     className="btn"
-                    onClick={() => { history.push("/groceryList/create") }}>
+                    onClick={() => { history.push("/storeList") }}>
                     Create New List
                 </button>
               </div>

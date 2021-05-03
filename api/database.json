@@ -28,12 +28,6 @@
       "userId": 1,
       "name": "unhealthy list",
       "storeId": 1
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "storeId": 3,
-      "id": 3
     }
   ],
   "selectedGroceryItems": [
@@ -45,12 +39,12 @@
     {
       "id": 2,
       "allFoodItemsId": 4,
-      "userGroceriesListId": 1
+      "userGroceriesListId": 3
     },
     {
       "id": 3,
       "allFoodItemsId": 6,
-      "userGroceriesListId": 1
+      "userGroceriesListId": 3
     },
     {
       "id": 4,

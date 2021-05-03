@@ -11,7 +11,7 @@ export const getGroceryListById = (id) => {
    }
 
 export const getAllGroceryLists = () => {
-    return fetch(`${remoteURL}/userGroceryLists`)
+    return fetch(`${remoteURL}/userGroceryLists/?_expand=store`)
     .then(result => result.json())
   }
 
@@ -37,13 +37,13 @@ export const getUserGroceryLists = (userId) => {
 };
 
 //TODO i believe this one will only be used for when i am editing the name, store, or other things of the grocery list, i will need another fetch call for the actual list itself 
-export const editGroceryList = (editTask) => {
-    return fetch(`${remoteURL}/tasks/${editTask.id}`, {
+export const editGroceryList = (editedGroceryListObject) => {
+    return fetch(`${remoteURL}/userGroceryLists/${editedGroceryListObject.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(editGroceryList)
+        body: JSON.stringify(editedGroceryListObject)
     }).then(res => res.json())
 };
 
@@ -53,7 +53,7 @@ export const getAllFoodItems = () => {
   }
 
 export const getFoodItemById = (groceryListId) => {
-    return fetch(`${remoteURL}/selectedGroceryItems?userGroceryList=${groceryListId}&_expand=allFoodItems`)
+    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${groceryListId}&_expand=allFoodItems`)
     .then(result => result.json())
 }
 

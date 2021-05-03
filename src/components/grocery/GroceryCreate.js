@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createGroceryList } from "../modules/FetchManager";
 import { useHistory, useParams } from "react-router-dom";
-import { getAllFoodItems, getFoodItemById } from "../modules/FetchManager";
+import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList } from "../modules/FetchManager";
 import { AllFoodItemsCard } from "./AllFoodItemsCard"
 import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
@@ -9,42 +9,57 @@ import "./groceryCreate.css"
 export const GroceryListCreateForm = (dingus) => {
   const [userGroceryList, setUserGroceryList] = useState({});
   const [allFoodItems, setAllFoodItems] = useState([{}])
+  const [groceryList, setGroceryList] = useState({name: ""})
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
   const {listId}  = useParams()
-  console.log(listId)
+  console.log(listId, "dis be the list id")
 
 //!we use this to set setUserGroceryList to hold the data from the fetch call getFoodItemById. we could have done this in a use effect, but we made a seperate function for it.
   const getUserList = () =>{
-    getFoodItemById()
+    getGroceryListById(listId)
+    .then(res => {
+      setGroceryList(res)
+    })
+    getFoodItemById(listId)
     .then(response => {
-      console.log(response)
+      console.log(response, "filtered data for specific user grocery list items")
       setUserGroceryList(response)})
-
   }
+
+  // console.log(groceryList)
 
   //!is this just for when someone types into fields? not sure why itsn needed. 
   const handleFieldChange = evt => {
-    const stateToChange = { ...userGroceryList };
+    const stateToChange = { ...groceryList };
     stateToChange[evt.target.id] = evt.target.value;
-    setUserGroceryList(stateToChange);
+    // console.log(evt.target.value, "event.target.value")
+    // console.log(groceryList, "UGL")
+    setGroceryList(stateToChange);
   };
 
-  const updateExistingUserGroceryList = evt => {
-    evt.preventDefault()
-    setIsLoading(true);
-
-     //! do i need all of these? or just the property that im currently editing?
-     const editedUserGroceryList = {
-      key: userGroceryList.id,
-      name: userGroceryList.name
-    };
-
-    updateExistingUserGroceryList(editedUserGroceryList)
-    //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet. 
-    .then(() => history.push("/store")
-    )
+  const handleSaveButton = () => {
+    editGroceryList(groceryList)
+    .then(() => {
+      history.push("/")
+    })
   }
+
+  // const updateExistingUserGroceryList = evt => {
+  //   evt.preventDefault()
+  //   setIsLoading(true);
+
+  //    //! do i need all of these? or just the property that im currently editing?
+  //    const editedUserGroceryList = {
+  //     key: userGroceryList.id,
+  //     name: userGroceryList.name
+  //   };
+
+  //   updateExistingUserGroceryList(editedUserGroceryList)
+  //   //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet. 
+  //   .then(() => history.push("/store")
+  //   )
+  // }
 
 
   useEffect(() => {
@@ -61,7 +76,12 @@ export const GroceryListCreateForm = (dingus) => {
   return (
     <>
         <h3>Edit Your Shopping List</h3>
-        <h4><input
+
+        <div className="groceryEditHolder">
+          <div className="userList">
+            <div>
+            <form>
+            <h4><input
               type="text"
               required
               className="form-control"
@@ -70,15 +90,6 @@ export const GroceryListCreateForm = (dingus) => {
               value={userGroceryList.name}
             />
         </h4>  
-
-        <div className="groceryEditHolder">
-          <div className="userList">
-            <div>
-            <form>
-  <label>
-    Name:
-    <input type="text" name="name" />
-  </label>
 </form>
             </div>
             <div className="userListCardHolder">
@@ -90,7 +101,7 @@ export const GroceryListCreateForm = (dingus) => {
                   />
                     )}
               </div>
-              <button className="addToList" onClick={() => {console.log("you clicked me")}}>save list</button>
+              <button className="addToList" onClick={() => {handleSaveButton()}}>save list</button>
           </div>
 
           <div className="storeList">
