@@ -9,6 +9,7 @@ import "./groceryCreate.css"
 export const GroceryListCreateForm = () => {
   const [userGroceryList, setUserGroceryList] = useState({});
   const [allFoodItems, setAllFoodItems] = useState([{}])
+  const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
 
 //!we use this to set setUserGroceryList to hold the data from the fetch call getFoodItemById. we could have done this in a use effect, but we made a seperate function for it.
@@ -18,6 +19,30 @@ export const GroceryListCreateForm = () => {
       console.log(response)
       setUserGroceryList(response)})
   }
+
+  //!is this just for when someone types into fields? not sure why itsn needed. 
+  const handleFieldChange = evt => {
+    const stateToChange = { ...userGroceryList };
+    stateToChange[evt.target.id] = evt.target.value;
+    setUserGroceryList(stateToChange);
+  };
+
+  const updateExistingUserGroceryList = evt => {
+    evt.preventDefault()
+    setIsLoading(true);
+
+     //! do i need all of these? or just the property that im currently editing?
+     const editedUserGroceryList = {
+      key: userGroceryList.id,
+      name: userGroceryList.name
+    };
+
+    updateExistingUserGroceryList(editedUserGroceryList)
+    //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet. 
+    .then(() => history.push("/store")
+    )
+  }
+
 
   useEffect(() => {
     getUserList()
@@ -33,6 +58,15 @@ export const GroceryListCreateForm = () => {
   return (
     <>
         <h3>Edit Your Shopping List</h3>
+        <h4><input
+              type="text"
+              required
+              className="form-control"
+              onChange={handleFieldChange}
+              id="name"
+              value={userGroceryList.name}
+            />
+        </h4>  
 
         <div className="groceryEditHolder">
           <div className="userList">

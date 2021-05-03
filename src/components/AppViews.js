@@ -7,18 +7,18 @@ import { StoreList } from "./store/StoreList"
 import { userStorageKey } from "../components/auth/authSettings"
 
 
-export const AppViews = () => {
+export const AppViews = (props) => {
   //? no clue on how this works, but do know that it is checking for a login
-  // const [isAuthenticated, setIsAuthenticated] = useState(
-  //   sessionStorage.getItem(userStorageKey) !== null
-  // );
-  // const setAuthUser = (user) => {
-  //   sessionStorage.setItem(userStorageKey, JSON.stringify(user));
-  //   setIsAuthenticated(sessionStorage.getItem(userStorageKey) !== null);
-  // };
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    sessionStorage.getItem(userStorageKey) !== null
+  );
+  const setAuthUser = (user) => {
+    sessionStorage.setItem(userStorageKey, JSON.stringify(user));
+    setIsAuthenticated(sessionStorage.getItem(userStorageKey) !== null);
+  };
 
-  // const setUser = props.setUser;
-  // const hasUser = true;
+  const setUser = props.setUser;
+  const hasUser = true;
   return (
     <>
       <Route exact path="/">
@@ -36,7 +36,6 @@ export const AppViews = () => {
       <Route exact path="/storeList">
         <StoreList />
       </Route>
-
 
       {/* <Route exact path="/GroceryCreate">
         <GroceryCreate />
