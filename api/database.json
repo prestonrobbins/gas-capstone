@@ -16,9 +16,6 @@
       "id": 3
     }
   ],
-
-
-
   "userGroceryLists": [
     {
       "id": 1,
@@ -31,12 +28,14 @@
       "userId": 1,
       "name": "unhealthy list",
       "storeId": 1
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "storeId": 3,
+      "id": 3
     }
   ],
-
-
-
-
   "selectedGroceryItems": [
     {
       "id": 1,
@@ -63,13 +62,7 @@
       "allFoodItemsId": 20,
       "userGroceriesListId": 1
     }
-
-
   ],
-
-
-
-
   "stores": [
     {
       "id": 1,
@@ -87,10 +80,6 @@
       "address": "908 decent movie street"
     }
   ],
-
-
-
-
   "allFoodItems": [
     {
       "id": 1,
@@ -111,7 +100,7 @@
     {
       "id": 3,
       "name": "grapes",
-      "price": 3.30,
+      "price": 3.3,
       "aisleId": 1,
       "categoryID": "fruit",
       "foodItemImageURL": ""
@@ -127,7 +116,7 @@
     {
       "id": 5,
       "name": "lettuce",
-      "price": 2.50,
+      "price": 2.5,
       "aisleId": 3,
       "categoryID": "veggies",
       "foodItemImageURL": ""
@@ -341,10 +330,6 @@
       "foodItemImageURL": ""
     }
   ],
-
-
-
-
   "categories": [
     {
       "id": 1,
@@ -367,10 +352,6 @@
       "name": "misc"
     }
   ],
-
-
-
-
   "aisles": [
     {
       "id": 1,

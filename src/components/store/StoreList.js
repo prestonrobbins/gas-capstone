@@ -2,12 +2,37 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { StoreCard } from "./StoreCard";
 //TODO do i need all these? such as the edit since we dont use it in the return?
-import { getStoreById, getAllStores } from "../modules/FetchManager";
+import { getStoreById, getAllStores, createGroceryList } from "../modules/FetchManager";
 
-export const StoreList = () => {
+export const StoreList = (user) => {
   const [stores, setStores] = useState([]);
+  const [userGroceryList, setUserGroceryList] = useState({
+    id: 1,
+    name: "",
+    storeId: 0,
+    userId: parseInt(sessionStorage.getItem("app_user_id"))
+});
 
-  // const history = useHistory();
+const handleControlledInputChange = (evt) => {
+    const newLocation = { ...userGroceryList }
+    let selectedVal = evt.target.value
+    // forms always provide values as strings. But we want to save the ids as numbers.
+    if (evt.target.id.includes("Id")) {
+        selectedVal = parseInt(selectedVal)
+    }
+    /* Location is an object with properties.
+    Set the property to the new value
+    using object bracket notation. */
+    //TODO newUserGroceryList[evt.target.id] = selectedVal
+    // update state
+    //TODO setUserGroceryList(newUserGroceryList)
+}
+
+// const handleClickSaveUserGroceryList = (event) => {
+//     event.preventDefault()
+//         addUserGroceryList(userGroceryList)
+//             .then(() => history.push("/locations"))
+//     }
 
   const getStoreListReturn = () => {
     return getAllStores().then((storesFromAPI) => {
@@ -18,8 +43,6 @@ export const StoreList = () => {
   useEffect(() => {
     getStoreListReturn();
   }, []);
-  //TODO ??? what is history doing here? still confused on it.
-  //TODO why are we not defining edit here? we have create, delete, the useState function and all but not that.
 
   return (
     <>
@@ -30,12 +53,11 @@ export const StoreList = () => {
         {stores.map((storeItem) => (
           <StoreCard
             key={storeItem.id}
-            name={storeItem.name}
-            address={storeItem.address}
+            store={storeItem}
+            // setUserGroceryList={setUserGroceryList}
           />
         ))}
       </div>
     </>
   );
 };
-//TODO id love to know if im naming things well with in my project, the last time bryan tweeked that on my project it really helped.

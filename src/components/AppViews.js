@@ -17,6 +17,10 @@ export const AppViews = (props) => {
     setIsAuthenticated(sessionStorage.getItem(userStorageKey) !== null);
   };
 
+
+  const dingus="dangus"
+
+
   const setUser = props.setUser;
   const hasUser = true;
   return (
@@ -29,8 +33,8 @@ export const AppViews = (props) => {
         <GroceryListEditForm />
       </Route>
 
-      <Route exact path="/GroceryLists/create">
-        <GroceryListCreateForm />
+      <Route exact path="/groceryList/:listId(\d+)">
+        <GroceryListCreateForm dingis={dingus}/>
       </Route>
 
       <Route exact path="/storeList">

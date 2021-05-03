@@ -26,7 +26,7 @@ export const getUserGroceryLists = (userId) => {
     .then(result => result.json())
 }
 
-export const createGroceryList = (newGroceryList) => {
+ export const createGroceryList = (newGroceryList) =>{ 
     return fetch(`${remoteURL}/userGroceryLists`, {
         method: "POST",
         headers: {

@@ -6,11 +6,13 @@ import { AllFoodItemsCard } from "./AllFoodItemsCard"
 import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
 
-export const GroceryListCreateForm = () => {
+export const GroceryListCreateForm = (dingus) => {
   const [userGroceryList, setUserGroceryList] = useState({});
   const [allFoodItems, setAllFoodItems] = useState([{}])
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
+  const {listId}  = useParams()
+  console.log(listId)
 
 //!we use this to set setUserGroceryList to hold the data from the fetch call getFoodItemById. we could have done this in a use effect, but we made a seperate function for it.
   const getUserList = () =>{
@@ -18,6 +20,7 @@ export const GroceryListCreateForm = () => {
     .then(response => {
       console.log(response)
       setUserGroceryList(response)})
+
   }
 
   //!is this just for when someone types into fields? not sure why itsn needed. 
