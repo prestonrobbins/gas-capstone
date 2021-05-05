@@ -52,3 +52,10 @@ export const AppViews = (props) => {
     </>
   );
 };
+
+
+
+const tempCollectionId = 1
+
+//create collectinos with in your data base with the ID of 1. make 3 so that we know only three should load in.
+

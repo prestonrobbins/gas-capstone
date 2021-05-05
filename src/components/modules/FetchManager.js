@@ -18,10 +18,10 @@ export const getAllGroceryLists = () => {
 export const getUserGroceryLists = (userId) => {
      return fetch(`${remoteURL}/userGroceryLists/?_embed=${userId}`)
      .then(result => result.json)
-  }   
+  } 
 
-  export const deleteGroceryList = (id) => {
-    return fetch(`${remoteURL}/userGroceryLists/${id}`,{
+  export const deleteGroceryList = (groceryListId) => {
+    return fetch(`${remoteURL}/userGroceryLists/${groceryListId}`,{
         method: "DELETE"})
     .then(result => result.json())
 }
@@ -66,6 +66,17 @@ export const getStoreById = (id) => {
     return fetch(`${remoteURL}/stores/${id}`)
     .then(result => result.json())
 }
+
+export const createSelectedGroceryListItem = (newListItem) => {
+    return fetch(`${remoteURL}/selectedGroceryItems`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newListItem)
+    }).then(res => res.json())
+};
+
 
 
    //? embed vs extract

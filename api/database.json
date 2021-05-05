@@ -28,6 +28,24 @@
       "userId": 1,
       "name": "unhealthy list",
       "storeId": 1
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "storeId": 1,
+      "id": 3
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "storeId": 2,
+      "id": 4
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "storeId": 2,
+      "id": 5
     }
   ],
   "selectedGroceryItems": [
@@ -55,6 +73,16 @@
       "id": 5,
       "allFoodItemsId": 20,
       "userGroceriesListId": 1
+    },
+    {
+      "allFoodItemsId": 1,
+      "userGroceriesListId": 5,
+      "id": 15
+    },
+    {
+      "allFoodItemsId": 13,
+      "userGroceriesListId": 5,
+      "id": 16
     }
   ],
   "stores": [

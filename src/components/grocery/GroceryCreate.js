@@ -21,10 +21,18 @@ export const GroceryListCreateForm = (dingus) => {
     .then(res => {
       setGroceryList(res)
     })
+    // getFoodItemById(listId)
+    // .then(response => {
+    //   console.log(response, "filtered data for specific user grocery list items")
+    //   setUserGroceryList(response)})
+  }
+
+  const getUserGroceryList = () =>{
     getFoodItemById(listId)
     .then(response => {
       console.log(response, "filtered data for specific user grocery list items")
       setUserGroceryList(response)})
+
   }
 
   // console.log(groceryList)
@@ -64,6 +72,7 @@ export const GroceryListCreateForm = (dingus) => {
 
   useEffect(() => {
     getUserList()
+    getUserGroceryList()
   }, []);
   
   useEffect(() => {
@@ -122,8 +131,8 @@ export const GroceryListCreateForm = (dingus) => {
                 .map(foodItem =>
                 <AllFoodItemsCard
                     key={foodItem.id}
-                    name={foodItem.name}
-                    price={foodItem.price} 
+                    foodItem={foodItem}
+                    groceryList={groceryList}
                 />
                 )} 
                 </div>
