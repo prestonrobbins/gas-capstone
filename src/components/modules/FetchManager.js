@@ -53,7 +53,7 @@ export const getAllFoodItems = () => {
   }
 
 export const getFoodItemById = (groceryListId) => {
-    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${groceryListId}&_expand=allFoodItems`)
+    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${groceryListId}&_expand=allFoodItem`)
     .then(result => result.json())
 }
 
@@ -77,7 +77,18 @@ export const createSelectedGroceryListItem = (newListItem) => {
     }).then(res => res.json())
 };
 
+  export const deleteUserGroceryListItem = (id) => {
+    return fetch(`${remoteURL}/selectedGroceryItems/${id}`,{
+        method: "DELETE"})
+    .then(result => result.json())
+}
 
+export const getAllUserGroceryItems = () => {
+    return fetch(`${remoteURL}/selectedGroceryItems`)
+    .then(result => result.json())
+}
 
-   //? embed vs extract
-   //?
+export const getSelectedFoodItemsById = (userGroceriesListId) => {
+    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${userGroceriesListId}&_expand=allFoodItem`)
+     .then(res => res.json())
+   }

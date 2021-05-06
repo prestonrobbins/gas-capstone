@@ -46,42 +46,83 @@
       "userId": 1,
       "storeId": 2,
       "id": 5
+    },
+    {
+      "name": "",
+      "userId": 1,
+      "storeId": 1,
+      "id": 6
     }
   ],
   "selectedGroceryItems": [
     {
       "id": 1,
-      "allFoodItemsId": 1,
+      "allFoodItemId": 1,
       "userGroceriesListId": 2
     },
     {
       "id": 2,
-      "allFoodItemsId": 4,
+      "allFoodItemId": 4,
       "userGroceriesListId": 3
     },
     {
       "id": 3,
-      "allFoodItemsId": 6,
+      "allFoodItemId": 6,
       "userGroceriesListId": 3
     },
     {
       "id": 4,
-      "allFoodItemsId": 6,
+      "allFoodItemId": 6,
       "userGroceriesListId": 1
     },
     {
       "id": 5,
-      "allFoodItemsId": 20,
+      "allFoodItemId": 20,
       "userGroceriesListId": 1
     },
     {
-      "allFoodItemsId": 1,
+      "allFoodItemId": 11,
       "userGroceriesListId": 5,
+      "id": 8
+    },
+    {
+      "allFoodItemId": 13,
+      "userGroceriesListId": 5,
+      "id": 9
+    },
+    {
+      "allFoodItemId": 29,
+      "userGroceriesListId": 5,
+      "id": 10
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 11
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 12
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 13
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 14
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
       "id": 15
     },
     {
-      "allFoodItemsId": 13,
-      "userGroceriesListId": 5,
+      "allFoodItemId": 2,
+      "userGroceriesListId": 6,
       "id": 16
     }
   ],

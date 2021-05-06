@@ -10,7 +10,7 @@ export const AllFoodItemsCard = ({ foodItem, groceryList }) => {
     const handleAddFoodItem= () => {
         //NOTE i need to pass in all the properties of the object, correct?
           const newSelectedGroceryItem = {
-            allFoodItemsId: foodItem.id,
+            allFoodItemId: foodItem.id,
             userGroceriesListId: groceryList.id
           }
           console.log(newSelectedGroceryItem, "HELP ME")

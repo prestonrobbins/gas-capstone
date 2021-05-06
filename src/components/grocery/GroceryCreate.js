@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createGroceryList } from "../modules/FetchManager";
 import { useHistory, useParams } from "react-router-dom";
-import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList } from "../modules/FetchManager";
+import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList, deleteUserGroceryListItem, getAllUserGroceryItems } from "../modules/FetchManager";
 import { AllFoodItemsCard } from "./AllFoodItemsCard"
 import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
@@ -51,6 +51,11 @@ export const GroceryListCreateForm = (dingus) => {
     .then(() => {
       history.push("/")
     })
+  }
+//!NOTE this is what im working with now, do i need to do a use state for this? 
+  const handleDeleteUserGroceryItem = (id) =>{
+    deleteUserGroceryListItem(id)
+    .then(() => getAllUserGroceryItems().then(setUserGroceryList));
   }
 
   // const updateExistingUserGroceryList = evt => {
@@ -107,6 +112,7 @@ export const GroceryListCreateForm = (dingus) => {
                   <UserGroceryCard
                   key={userFoodItem.id}
                   userFoodItem={userFoodItem}
+                  handleDeleteUserGroceryItem={handleDeleteUserGroceryItem}
                   />
                     )}
               </div>

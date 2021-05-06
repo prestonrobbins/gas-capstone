@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
 
-export const UserGroceryCard = ({ userFoodItem }) => {
+export const UserGroceryCard = ({ userFoodItem, handleDeleteUserGroceryItem }) => {
     return (
     <>
-    <h4>{userFoodItem.allFoodItems.name}</h4>
-    <h4>{userFoodItem.allFoodItems.id}</h4>
-    <p>${userFoodItem.allFoodItems.price}</p>
+    <h4>{userFoodItem.allFoodItem.name}</h4>
+    <h4>{userFoodItem.allFoodItem.id}</h4>
+    <p>${userFoodItem.allFoodItem.price}</p>
 
         <button type="button" className="cardButton" 
-        // onClick={() => handleAddFoodItem(foodItem.id)}
-        >Add</button>
+         onClick={() => handleDeleteUserGroceryItem(userFoodItem.id)}
+        >remove</button>
     </>
       );
   };

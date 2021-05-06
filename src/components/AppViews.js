@@ -4,6 +4,7 @@ import { GroceryList } from "./grocery/GroceryList"
 import { GroceryListEditForm } from "./grocery/GroceryEdit"
 import { GroceryListCreateForm } from "./grocery/GroceryCreate"
 import { StoreList } from "./store/StoreList"
+import { StoreMap } from "./store/StoreMap"
 import { userStorageKey } from "../components/auth/authSettings"
 
 
@@ -39,6 +40,10 @@ export const AppViews = (props) => {
 
       <Route exact path="/storeList">
         <StoreList />
+      </Route>
+
+      <Route exact path="/storeMap/:listId(\d+)">
+        <StoreMap />
       </Route>
 
       {/* <Route exact path="/GroceryCreate">
