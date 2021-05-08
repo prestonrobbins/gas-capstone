@@ -3,25 +3,28 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom'
 import { GroceryCard } from './GroceryCard'
 //TODO do i need all these? such as the edit since we dont use it in the return?
-import { getGroceryList, deleteGroceryList, getAllGroceryLists, editGroceryList } from '../modules/FetchManager'
+import { getGroceryList, deleteGroceryList, getGroceryListsByUserId, editGroceryList } from '../modules/FetchManager'
  
 export const GroceryList = () => {
 
     const [groceryLists, setGroceryList] = useState([]);
 
     const history = useHistory();
+    const userId = parseInt(sessionStorage.getItem("app_user_id"))
 
     const handleDeleteGroceryList = id => {
         deleteGroceryList(id)
-        .then(() => getAllGroceryLists().then(setGroceryList))
+        .then(() => getGroceryListsByUserId(userId).then(setGroceryList))
     };
 
     const getGroceryLists = () => {
-        return getAllGroceryLists()
+        return getGroceryListsByUserId(userId)
         .then(GroceryListFromAPI => {
             setGroceryList(GroceryListFromAPI)
         })
     };
+    console.log(getGroceryListsByUserId())
+    //getGroceryListsByUserId was 
 
     useEffect(() => {
         getGroceryLists();

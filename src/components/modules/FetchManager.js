@@ -10,6 +10,12 @@ export const getGroceryListById = (id) => {
      .then(res => res.json())
    }
 
+//!using this for the new load out of the first page when used logs in
+export const getGroceryListsByUserId = (userId) =>{
+    return fetch(`${remoteURL}/userGroceryLists/?userId=${userId}&_expand=store`)
+    .then(result => result.json())
+}
+
 export const getAllGroceryLists = () => {
     return fetch(`${remoteURL}/userGroceryLists/?_expand=store`)
     .then(result => result.json())

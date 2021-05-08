@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createGroceryList } from "../modules/FetchManager";
 import { useHistory, useParams } from "react-router-dom";
-import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList, deleteUserGroceryListItem, getAllUserGroceryItems } from "../modules/FetchManager";
+import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList, deleteUserGroceryListItem, getAllUserGroceryItems, createSelectedGroceryListItem } from "../modules/FetchManager";
 import { AllFoodItemsCard } from "./AllFoodItemsCard"
 import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
@@ -55,7 +55,7 @@ export const GroceryListCreateForm = (dingus) => {
 //!NOTE this is what im working with now, do i need to do a use state for this? 
   const handleDeleteUserGroceryItem = (id) =>{
     deleteUserGroceryListItem(id)
-    .then(() => getAllUserGroceryItems().then(setUserGroceryList));
+    .then(getUserGroceryList);
   }
 
   // const updateExistingUserGroceryList = evt => {
@@ -73,6 +73,16 @@ export const GroceryListCreateForm = (dingus) => {
   //   .then(() => history.push("/store")
   //   )
   // }
+
+  const handleAddFoodItem = (foodItem) => {
+    //NOTE i need to pass in all the properties of the object, correct?
+      const newSelectedGroceryItem = {
+        allFoodItemId: foodItem.id,
+        userGroceriesListId: groceryList.id
+      }
+      createSelectedGroceryListItem(newSelectedGroceryItem)
+      .then(getUserGroceryList)
+    }
 
 
   useEffect(() => {
@@ -139,6 +149,7 @@ export const GroceryListCreateForm = (dingus) => {
                     key={foodItem.id}
                     foodItem={foodItem}
                     groceryList={groceryList}
+                    handleAddFoodItem={handleAddFoodItem}
                 />
                 )} 
                 </div>

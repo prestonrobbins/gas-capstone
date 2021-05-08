@@ -14,116 +14,67 @@
       "email": "brenda@gmail.com",
       "name": "brenda long",
       "id": 3
+    },
+    {
+      "email": "audery@gmail.com",
+      "name": "audrey willie",
+      "id": 4
     }
   ],
   "userGroceryLists": [
     {
-      "id": 1,
-      "userId": 1,
-      "name": "candy",
-      "storeId": 2
+      "name": "dis be me list",
+      "userId": 4,
+      "storeId": 2,
+      "id": 1
     },
     {
-      "id": 2,
-      "userId": 1,
-      "name": "unhealthy list",
-      "storeId": 1
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "storeId": 1,
-      "id": 3
-    },
-    {
-      "name": "",
+      "name": "eat people",
       "userId": 1,
       "storeId": 2,
-      "id": 4
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "storeId": 2,
-      "id": 5
-    },
-    {
-      "name": "",
-      "userId": 1,
-      "storeId": 1,
-      "id": 6
+      "id": 2
     }
   ],
   "selectedGroceryItems": [
     {
-      "id": 1,
-      "allFoodItemId": 1,
-      "userGroceriesListId": 2
-    },
-    {
-      "id": 2,
-      "allFoodItemId": 4,
-      "userGroceriesListId": 3
-    },
-    {
-      "id": 3,
-      "allFoodItemId": 6,
-      "userGroceriesListId": 3
-    },
-    {
-      "id": 4,
-      "allFoodItemId": 6,
-      "userGroceriesListId": 1
-    },
-    {
-      "id": 5,
-      "allFoodItemId": 20,
-      "userGroceriesListId": 1
-    },
-    {
-      "allFoodItemId": 11,
-      "userGroceriesListId": 5,
-      "id": 8
-    },
-    {
-      "allFoodItemId": 13,
-      "userGroceriesListId": 5,
-      "id": 9
-    },
-    {
-      "allFoodItemId": 29,
-      "userGroceriesListId": 5,
-      "id": 10
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 5,
-      "id": 11
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 5,
-      "id": 12
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 5,
-      "id": 13
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 5,
-      "id": 14
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 6,
-      "id": 15
-    },
-    {
       "allFoodItemId": 2,
-      "userGroceriesListId": 6,
-      "id": 16
+      "userGroceriesListId": 1,
+      "id": 1
+    },
+    {
+      "allFoodItemId": 7,
+      "userGroceriesListId": 1,
+      "id": 2
+    },
+    {
+      "allFoodItemId": 15,
+      "userGroceriesListId": 1,
+      "id": 3
+    },
+    {
+      "allFoodItemId": 18,
+      "userGroceriesListId": 1,
+      "id": 4
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 5
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 2,
+      "id": 6
+    },
+    {
+      "allFoodItemId": 6,
+      "userGroceriesListId": 2,
+      "id": 7
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 2,
+      "id": 8
     }
   ],
   "stores": [
