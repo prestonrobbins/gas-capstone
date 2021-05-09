@@ -33,6 +33,24 @@
       "userId": 1,
       "storeId": 2,
       "id": 2
+    },
+    {
+      "name": "woohoo shopping",
+      "userId": 1,
+      "storeId": 2,
+      "id": 3
+    },
+    {
+      "name": "lplplplpl",
+      "userId": 1,
+      "storeId": 1,
+      "id": 4
+    },
+    {
+      "name": "dfghj",
+      "userId": 1,
+      "storeId": 1,
+      "id": 5
     }
   ],
   "selectedGroceryItems": [
@@ -75,6 +93,41 @@
       "allFoodItemId": 30,
       "userGroceriesListId": 2,
       "id": 8
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 3,
+      "id": 9
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 3,
+      "id": 10
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 4,
+      "id": 11
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 4,
+      "id": 12
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 13
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 5,
+      "id": 14
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 5,
+      "id": 15
     }
   ],
   "stores": [

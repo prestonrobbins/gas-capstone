@@ -23,7 +23,7 @@ export const GroceryList = () => {
             setGroceryList(GroceryListFromAPI)
         })
     };
-    console.log(getGroceryListsByUserId())
+    // console.log(getGroceryListsByUserId())
     //getGroceryListsByUserId was 
 
     useEffect(() => {

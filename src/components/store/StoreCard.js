@@ -21,7 +21,7 @@ export const StoreCard = ({ store }) => {
     }
     createGroceryList(newGroceryList)
     .then(res => {
-      console.log(res)
+      // console.log(res)
       history.push(`/groceryList/${res.id}`)
     })
   }

@@ -13,7 +13,7 @@ export const GroceryListCreateForm = (dingus) => {
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
   const {listId}  = useParams()
-  console.log(listId, "dis be the list id")
+  // console.log(listId, "dis be the list id")
 
 //!we use this to set setUserGroceryList to hold the data from the fetch call getFoodItemById. we could have done this in a use effect, but we made a seperate function for it.
   const getUserList = () =>{
@@ -30,7 +30,7 @@ export const GroceryListCreateForm = (dingus) => {
   const getUserGroceryList = () =>{
     getFoodItemById(listId)
     .then(response => {
-      console.log(response, "filtered data for specific user grocery list items")
+      // console.log(response, "filtered data for specific user grocery list items")
       setUserGroceryList(response)})
 
   }
@@ -50,6 +50,13 @@ export const GroceryListCreateForm = (dingus) => {
     editGroceryList(groceryList)
     .then(() => {
       history.push("/")
+    })
+  }
+
+  const handleSaveButtonAndViewMap = () => {
+    editGroceryList(groceryList)
+    .then(() => {
+      history.push(`/storeMap/${listId}`)
     })
   }
 //!NOTE this is what im working with now, do i need to do a use state for this? 
@@ -99,7 +106,7 @@ export const GroceryListCreateForm = (dingus) => {
 
   return (
     <>
-        <h3>Edit Your Shopping List</h3>
+        <h3>Select Your Items</h3>
 
         <div className="groceryEditHolder">
           <div className="userList">
@@ -127,6 +134,7 @@ export const GroceryListCreateForm = (dingus) => {
                     )}
               </div>
               <button className="addToList" onClick={() => {handleSaveButton()}}>save list</button>
+              <button className="addToList" onClick={() => {handleSaveButtonAndViewMap()}}>View Map</button>
           </div>
 
           <div className="storeList">

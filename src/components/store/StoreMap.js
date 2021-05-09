@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
 import { getSelectedFoodItemsById } from "../modules/FetchManager"
 import "./StoreMap.css"
@@ -8,7 +8,7 @@ export const StoreMap = () => {
     const [selectedFoodItems, setSelectedFoodItems] = useState([]);
     const history = useHistory()
 
-    const listId = 1
+    const listId = useParams()
     const getSelectedFoodItemsByIdReturn = () => {
         return getSelectedFoodItemsById(listId)
         .then((res) => {
@@ -32,8 +32,8 @@ export const StoreMap = () => {
       const selectedFilteredFoodItemAisleTen = selectedFoodItems.filter(foodItem => foodItem.allFoodItem.aisleId === 10)
 
 
-      console.log("aisle one objects", selectedFilteredFoodItemAisleOne)
-      console.log(selectedFoodItems)
+    //   console.log("aisle one objects", selectedFilteredFoodItemAisleOne)
+    //   console.log(selectedFoodItems)
 
       
 
