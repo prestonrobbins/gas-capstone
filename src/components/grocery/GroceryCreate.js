@@ -37,7 +37,6 @@ export const GroceryListCreateForm = (dingus) => {
 
   // console.log(groceryList)
 
-  //!is this just for when someone types into fields? not sure why itsn needed. 
   const handleFieldChange = evt => {
     const stateToChange = { ...groceryList };
     stateToChange[evt.target.id] = evt.target.value;
@@ -118,7 +117,7 @@ export const GroceryListCreateForm = (dingus) => {
               className="form-control"
               onChange={handleFieldChange}
               id="name"
-              value={userGroceryList.name}
+              value={groceryList.name}
             />
         </h4>  
 </form>

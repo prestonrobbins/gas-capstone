@@ -25,6 +25,7 @@ export const StoreCard = ({ store }) => {
       history.push(`/groceryList/${res.id}`)
     })
   }
+  
   return (
       <>
       <h3 className="cardName">

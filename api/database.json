@@ -29,28 +29,16 @@
       "id": 1
     },
     {
-      "name": "eat people",
+      "name": "woop woop",
       "userId": 1,
-      "storeId": 2,
+      "storeId": 1,
       "id": 2
     },
     {
-      "name": "woohoo shopping",
+      "name": "list list",
       "userId": 1,
       "storeId": 2,
       "id": 3
-    },
-    {
-      "name": "lplplplpl",
-      "userId": 1,
-      "storeId": 1,
-      "id": 4
-    },
-    {
-      "name": "dfghj",
-      "userId": 1,
-      "storeId": 1,
-      "id": 5
     }
   ],
   "selectedGroceryItems": [
@@ -73,36 +61,6 @@
       "allFoodItemId": 18,
       "userGroceriesListId": 1,
       "id": 4
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 2,
-      "id": 5
-    },
-    {
-      "allFoodItemId": 3,
-      "userGroceriesListId": 2,
-      "id": 6
-    },
-    {
-      "allFoodItemId": 6,
-      "userGroceriesListId": 2,
-      "id": 7
-    },
-    {
-      "allFoodItemId": 30,
-      "userGroceriesListId": 2,
-      "id": 8
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 3,
-      "id": 9
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 3,
-      "id": 10
     },
     {
       "allFoodItemId": 3,
@@ -128,6 +86,36 @@
       "allFoodItemId": 4,
       "userGroceriesListId": 5,
       "id": 15
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 16
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 17
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 18
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 19
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 2,
+      "id": 20
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 2,
+      "id": 21
     }
   ],
   "stores": [

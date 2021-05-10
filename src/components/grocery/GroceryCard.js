@@ -26,7 +26,7 @@ export const GroceryCard = ({ groceryList, handleDeleteGroceryList }) => {
         <button type="button" className="cardButton" onClick={() => handleDeleteGroceryList(groceryList.id)}>Delete</button>
 
 {/* edit */}
-        <Link to={`/groceryLists/${groceryList.id}/edit`}>
+        <Link to={`/groceryList/${groceryList.id}`}>
             <button className="cardButton">Edit</button>
         </Link>
         </div>
