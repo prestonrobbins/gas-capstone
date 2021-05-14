@@ -14,57 +14,151 @@
       "email": "brenda@gmail.com",
       "name": "brenda long",
       "id": 3
+    },
+    {
+      "email": "audery@gmail.com",
+      "name": "audrey willie",
+      "id": 4
+    },
+    {
+      "email": "fdsa@gmail.com",
+      "name": "fdsa fdsa",
+      "id": 5
     }
   ],
-
-
-
   "userGroceryLists": [
     {
-      "id": 2,
+      "name": "dis be me list",
+      "userId": 4,
+      "storeId": 2,
+      "id": 1
+    },
+    {
+      "name": "dsadsad",
       "userId": 1,
-      "name": "unhealthy list",
-      "storeId": 1
+      "storeId": 1,
+      "id": 2
+    },
+    {
+      "name": "111",
+      "userId": 1,
+      "storeId": 2,
+      "id": 3
     }
   ],
-
-
-
-
   "selectedGroceryItems": [
     {
-      "id": 1,
-      "allFoodItemsId": 1,
-      "userGroceriesListId": 1
+      "allFoodItemId": 2,
+      "userGroceriesListId": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "allFoodItemsId": 4,
-      "userGroceriesListId": 1
+      "allFoodItemId": 7,
+      "userGroceriesListId": 1,
+      "id": 2
     },
     {
-      "id": 3,
-      "allFoodItemsId": 6,
-      "userGroceriesListId": 1
+      "allFoodItemId": 15,
+      "userGroceriesListId": 1,
+      "id": 3
     },
     {
-      "id": 4,
-      "allFoodItemsId": 6,
-      "userGroceriesListId": 1
+      "allFoodItemId": 18,
+      "userGroceriesListId": 1,
+      "id": 4
     },
     {
-      "id": 5,
-      "allFoodItemsId": 20,
-      "userGroceriesListId": 1
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 16
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 17
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 18
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 19
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 2,
+      "id": 21
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 4,
+      "id": 22
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 4,
+      "id": 23
+    },
+    {
+      "allFoodItemId": 6,
+      "userGroceriesListId": 4,
+      "id": 24
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 5,
+      "id": 25
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 5,
+      "id": 26
+    },
+    {
+      "allFoodItemId": 7,
+      "userGroceriesListId": 5,
+      "id": 27
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 5,
+      "id": 28
+    },
+    {
+      "allFoodItemId": 11,
+      "userGroceriesListId": 5,
+      "id": 29
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 3,
+      "id": 30
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 3,
+      "id": 31
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 3,
+      "id": 32
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 2,
+      "id": 33
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 34
     }
-
-
   ],
-
-
-
-
-  "store": [
+  "stores": [
     {
       "id": 1,
       "name": "Publix",
@@ -81,10 +175,6 @@
       "address": "908 decent movie street"
     }
   ],
-
-
-
-
   "allFoodItems": [
     {
       "id": 1,
@@ -105,7 +195,7 @@
     {
       "id": 3,
       "name": "grapes",
-      "price": 3.30,
+      "price": 3.3,
       "aisleId": 1,
       "categoryID": "fruit",
       "foodItemImageURL": ""
@@ -121,7 +211,7 @@
     {
       "id": 5,
       "name": "lettuce",
-      "price": 2.50,
+      "price": 2.5,
       "aisleId": 3,
       "categoryID": "veggies",
       "foodItemImageURL": ""
@@ -335,10 +425,6 @@
       "foodItemImageURL": ""
     }
   ],
-
-
-
-
   "categories": [
     {
       "id": 1,
@@ -361,10 +447,6 @@
       "name": "misc"
     }
   ],
-
-
-
-
   "aisles": [
     {
       "id": 1,

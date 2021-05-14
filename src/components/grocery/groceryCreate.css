@@ -7,6 +7,7 @@ div{
 .groceryEditHolder{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .storeItemsScroll{
@@ -17,4 +18,19 @@ div{
 .userListCardHolder{
     overflow: scroll;
     height: 400px;
+    border: 3px red solid !important;
 }
+
+.storeHeader{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.categories{
+    height:30px;
+    margin-top:15px;
+}
+
+
+

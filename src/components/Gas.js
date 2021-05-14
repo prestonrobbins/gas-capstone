@@ -4,7 +4,7 @@
 
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-// import { NavBar } from "./nav/NavBar"
+import { NavBar } from "../components/NavBar"
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import { userStorageKey } from "./auth/authSettings";
@@ -12,7 +12,7 @@ import { AppViews } from "./AppViews";
 //TODO import css
         //? why is render needed here? could we not just use the return statement?
 
-export const Gas = () => {
+export const Gas = (props) => {
   return (
     <>
       <Route
@@ -20,7 +20,7 @@ export const Gas = () => {
           if (sessionStorage.getItem(userStorageKey)) {
             return (
               <>
-                {/* <NavBar /> */}
+                <NavBar />
                 <AppViews />
               </>
             );

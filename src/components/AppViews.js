@@ -3,21 +3,27 @@ import { Route } from "react-router-dom";
 import { GroceryList } from "./grocery/GroceryList"
 import { GroceryListEditForm } from "./grocery/GroceryEdit"
 import { GroceryListCreateForm } from "./grocery/GroceryCreate"
+import { StoreList } from "./store/StoreList"
+import { StoreMap } from "./store/StoreMap"
 import { userStorageKey } from "../components/auth/authSettings"
 
 
-export const AppViews = () => {
+export const AppViews = (props) => {
   //? no clue on how this works, but do know that it is checking for a login
-  // const [isAuthenticated, setIsAuthenticated] = useState(
-  //   sessionStorage.getItem(userStorageKey) !== null
-  // );
-  // const setAuthUser = (user) => {
-  //   sessionStorage.setItem(userStorageKey, JSON.stringify(user));
-  //   setIsAuthenticated(sessionStorage.getItem(userStorageKey) !== null);
-  // };
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    sessionStorage.getItem(userStorageKey) !== null
+  );
+  const setAuthUser = (user) => {
+    sessionStorage.setItem(userStorageKey, JSON.stringify(user));
+    setIsAuthenticated(sessionStorage.getItem(userStorageKey) !== null);
+  };
 
-  // const setUser = props.setUser;
-  // const hasUser = true;
+
+  const dingus="dangus"
+
+
+  const setUser = props.setUser;
+  const hasUser = true;
   return (
     <>
       <Route exact path="/">
@@ -28,8 +34,16 @@ export const AppViews = () => {
         <GroceryListEditForm />
       </Route>
 
-      <Route exact path="/GroceryLists/create">
-        <GroceryListCreateForm />
+      <Route exact path="/groceryList/:listId(\d+)">
+        <GroceryListCreateForm dingis={dingus}/>
+      </Route>
+
+      <Route exact path="/storeList">
+        <StoreList />
+      </Route>
+
+      <Route exact path="/storeMap/:listId(\d+)">
+        <StoreMap />
       </Route>
 
       {/* <Route exact path="/GroceryCreate">
@@ -43,3 +57,10 @@ export const AppViews = () => {
     </>
   );
 };
+
+
+
+const tempCollectionId = 1
+
+//create collectinos with in your data base with the ID of 1. make 3 so that we know only three should load in.
+
