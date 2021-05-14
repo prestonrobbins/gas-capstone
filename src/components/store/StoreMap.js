@@ -10,7 +10,7 @@ export const StoreMap = () => {
 
     const listId = useParams()
     const getSelectedFoodItemsByIdReturn = () => {
-        return getSelectedFoodItemsById(listId)
+        getSelectedFoodItemsById(listId.listId)
         .then((res) => {
             setSelectedFoodItems(res)
         })
@@ -31,6 +31,7 @@ export const StoreMap = () => {
       const selectedFilteredFoodItemAisleNine = selectedFoodItems.filter(foodItem => foodItem.allFoodItem.aisleId === 9)
       const selectedFilteredFoodItemAisleTen = selectedFoodItems.filter(foodItem => foodItem.allFoodItem.aisleId === 10)
 
+      console.log("aisle 1 items", selectedFilteredFoodItemAisleOne)
 
     //   console.log("aisle one objects", selectedFilteredFoodItemAisleOne)
     //   console.log(selectedFoodItems)

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createGroceryList } from "../modules/FetchManager";
 import { useHistory, useParams } from "react-router-dom";
-import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList, deleteUserGroceryListItem, getAllUserGroceryItems, createSelectedGroceryListItem } from "../modules/FetchManager";
+import { getAllFoodItems, getFoodItemById, getGroceryListById, editGroceryList, deleteUserGroceryListItem, deleteSelectedGroceryItems, createSelectedGroceryListItem } from "../modules/FetchManager";
 import { AllFoodItemsCard } from "./AllFoodItemsCard"
 import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
@@ -58,8 +58,10 @@ export const GroceryListCreateForm = (dingus) => {
       history.push(`/storeMap/${listId}`)
     })
   }
-//!NOTE this is what im working with now, do i need to do a use state for this? 
+
   const handleDeleteUserGroceryItem = (id) =>{
+    //!NOTE this is the new fetch call that i have placed in.
+    deleteSelectedGroceryItems(id)
     deleteUserGroceryListItem(id)
     .then(getUserGroceryList);
   }
