@@ -99,7 +99,7 @@ export const getSelectedFoodItemsById = (userGroceriesListId) => {
      .then(res => res.json())
    }
         
-   export const deleteSelectedGroceryItems = (userGroceriesListId) => {
+export const deleteSelectedGroceryItems = (userGroceriesListId) => {
     return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${userGroceriesListId}`,{
         method: "DELETE"})
     .then(result => result.json())

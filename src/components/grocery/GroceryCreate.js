@@ -61,7 +61,6 @@ export const GroceryListCreateForm = (dingus) => {
 
   const handleDeleteUserGroceryItem = (id) =>{
     //!NOTE this is the new fetch call that i have placed in.
-    deleteSelectedGroceryItems(id)
     deleteUserGroceryListItem(id)
     .then(getUserGroceryList);
   }
