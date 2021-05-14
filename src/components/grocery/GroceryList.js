@@ -14,7 +14,7 @@ export const GroceryList = () => {
 
     const handleDeleteGroceryList = id => {
         deleteSelectedGroceryItems(id)
-        deleteGroceryList(id)
+        // deleteGroceryList(id)
         .then(() => getGroceryListsByUserId(userId).then(setGroceryList))
     };
 

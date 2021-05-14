@@ -19,6 +19,11 @@
       "email": "audery@gmail.com",
       "name": "audrey willie",
       "id": 4
+    },
+    {
+      "email": "fdsa@gmail.com",
+      "name": "fdsa fdsa",
+      "id": 5
     }
   ],
   "userGroceryLists": [
@@ -27,6 +32,18 @@
       "userId": 4,
       "storeId": 2,
       "id": 1
+    },
+    {
+      "name": "dsadsad",
+      "userId": 1,
+      "storeId": 1,
+      "id": 2
+    },
+    {
+      "name": "111",
+      "userId": 1,
+      "storeId": 2,
+      "id": 3
     }
   ],
   "selectedGroceryItems": [
