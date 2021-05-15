@@ -33,7 +33,6 @@ export const GroceryListCreateForm = (dingus) => {
     .then(response => {
       // console.log(response, "filtered data for specific user grocery list items")
       setUserGroceryList(response)})
-
   }
 
   // console.log(groceryList)
@@ -75,9 +74,9 @@ export const GroceryListCreateForm = (dingus) => {
   //     key: userGroceryList.id,
   //     name: userGroceryList.name
   //   };
-
+  
   //   updateExistingUserGroceryList(editedUserGroceryList)
-  //   //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet. 
+  //   //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet.
   //   .then(() => history.push("/store")
   //   )
   // }
@@ -93,23 +92,25 @@ export const GroceryListCreateForm = (dingus) => {
     }
 
     useEffect(() => {
-      const uniqueItems = userGroceryList.filter((value, index, array) => {
-        // const potato = array.findIndex(value.id === )
-        const testing = item => {
-          return(item.allFoodItem.id === value.allFoodItem.id) === index}
-        console.log("testing", testing)
-        array.findIndex(item => (item.allFoodItem.id === value.allFoodItem.id) === index)
-      })
-      console.log("UGL", userGroceryList)
-      console.log("UI", uniqueItems)
-    }, [userGroceryList])
+        const uniqueItems = userGroceryList.filter((value, index) => {
 
+            const indexPosition = userGroceryList.findIndex((item) => {
+                return item.allFoodItemId === value.allFoodItemId
+            })
+
+            return index === indexPosition
+        })
+
+        console.log(uniqueItems)
+
+        setReducedUniqueItems(uniqueItems)
+    }, [userGroceryList])
 
   useEffect(() => {
     getUserList()
     getUserGroceryList()
   }, []);
-  
+
   useEffect(() => {
         getAllFoodItems()
         .then(response => {
@@ -133,12 +134,11 @@ export const GroceryListCreateForm = (dingus) => {
               id="name"
               value={groceryList.name}
             />
-        </h4>  
+        </h4>
 </form>
             </div>
             <div className="userListCardHolder">
-                {userGroceryList.length > 0 &&
-                userGroceryList.map(userFoodItem => 
+                {reducedUniqueItems.map(userFoodItem =>
                   <UserGroceryCard
                   key={userFoodItem.id}
                   userFoodItem={userFoodItem}
@@ -173,9 +173,9 @@ export const GroceryListCreateForm = (dingus) => {
                     groceryList={groceryList}
                     handleAddFoodItem={handleAddFoodItem}
                 />
-                )} 
+                )}
                 </div>
-            
+
           </div>
         </div>
       </>
