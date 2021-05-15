@@ -129,6 +129,7 @@ export const GroceryListCreateForm = (dingus) => {
                   <UserGroceryCard
                   key={userFoodItem.id}
                   userFoodItem={userFoodItem}
+                  userGroceryList={userGroceryList}
                   handleDeleteUserGroceryItem={handleDeleteUserGroceryItem}
                   />
                     )}

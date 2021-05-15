@@ -14,11 +14,9 @@ export const GroceryList = () => {
 
     const handleDeleteGroceryList = id => {
         deleteSelectedGroceryItems(id)
-        // deleteGroceryList(id)
+        deleteGroceryList(id)
         .then(() => getGroceryListsByUserId(userId).then(setGroceryList))
     };
-
-
 
     const getGroceryLists = () => {
         return getGroceryListsByUserId(userId)
@@ -60,4 +58,3 @@ export const GroceryList = () => {
       )
 
 }
-//TODO id love to know if im naming things well with in my project, the last time bryan tweeked that on my project it really helped.
