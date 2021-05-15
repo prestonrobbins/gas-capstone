@@ -7,7 +7,8 @@ import { UserGroceryCard } from "./userGroceryCard"
 import "./groceryCreate.css"
 
 export const GroceryListCreateForm = (dingus) => {
-  const [userGroceryList, setUserGroceryList] = useState({});
+  const [userGroceryList, setUserGroceryList] = useState([]);
+  const [reducedUniqueItems, setReducedUniqueItems] = useState([])
   const [allFoodItems, setAllFoodItems] = useState([{}])
   const [groceryList, setGroceryList] = useState({name: ""})
   const [isLoading, setIsLoading] = useState(false);
@@ -90,6 +91,18 @@ export const GroceryListCreateForm = (dingus) => {
       createSelectedGroceryListItem(newSelectedGroceryItem)
       .then(getUserGroceryList)
     }
+
+    useEffect(() => {
+      const uniqueItems = userGroceryList.filter((value, index, array) => {
+        // const potato = array.findIndex(value.id === )
+        const testing = item => {
+          return(item.allFoodItem.id === value.allFoodItem.id) === index}
+        console.log("testing", testing)
+        array.findIndex(item => (item.allFoodItem.id === value.allFoodItem.id) === index)
+      })
+      console.log("UGL", userGroceryList)
+      console.log("UI", uniqueItems)
+    }, [userGroceryList])
 
 
   useEffect(() => {
