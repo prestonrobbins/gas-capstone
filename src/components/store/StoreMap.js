@@ -44,17 +44,29 @@ export const StoreMap = () => {
         
         useEffect(() => {
             const canvas = canvasRef.current;
-            canvas.width=window.innerWidth*0.75 ;
-            canvas.height=window.innerHeight*0.75 ;
+            canvas.width=window.innerWidth*0.48 ;
+            canvas.height=window.innerHeight*0.85 ;
           //   canvas.fillStyle="blue";
           //   canvas.style.zIndex="5";
           //   canvas.style.width=`${window.innerWidth}px`;
           //   canvas.style.height=`${window.innerHeight}px`;
         
             const context = canvas.getContext("2d")
-          //   context.scale(1.5,5)
+            context.fillRect(50, 50+75, 75, 175)  //aisle 10
+            context.fillRect(50, 275+75, 75, 175) //aisle 9
+            context.fillRect(175, 50+75, 75, 175)  //aisle 8
+            context.fillRect(175, 275+75, 75, 175) //aisle 7
+            context.fillRect(300, 50+75, 75, 175)  //aisle 6
+            context.fillRect(300, 275+75, 75, 175) //aisle 5
+            context.fillRect(425, 50+75, 75, 175)  //aisle 4
+            context.fillRect(425, 275+75, 75, 175) //aisle 3
+            context.fillRect(550, 50+75, 75, 175)  //aisle 2
+            context.fillRect(550, 275+75, 75, 175) //aisle 1
+            context.fillRect(50, -10, 275, 75)  //aisle 10
+            context.fillRect(350, -10, 275, 75)  //aisle 10
             context.lineCap = "round"
-            context.strokeStyle = "red"
+            // context.fillStyle = "white"
+            context.strokeStyle = "blue"
             context.lineWidth = 5
             contextRef.current = context;
         }, [])
@@ -95,7 +107,7 @@ export const StoreMap = () => {
         return (
             <>
             <div ref={canvasDiv}>
-            <canvas style={{cursor:"crosshair", border:"2px solid red"}}
+            <canvas style={{cursor:"crosshair", border:"2px solid red", background:"red"}}
                   onMouseDown={startDrawing}
                   onMouseUp={finishDrawing}
                   onMouseMove={draw}
