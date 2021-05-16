@@ -100,7 +100,18 @@ export const getSelectedFoodItemsById = (userGroceriesListId) => {
    }
         
 export const deleteSelectedGroceryItems = (userGroceriesListId) => {
-    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${userGroceriesListId}`,{
-        method: "DELETE"})
+    return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${userGroceriesListId}`)
     .then(result => result.json())
+    .then((data) => {
+        const groceryListItemIds = data.map(item => item.id)
+       for(const itemId of groceryListItemIds){
+        deleteUserGroceryListItem(itemId)
+       }
+    })
 }
+
+// export const deleteSelectedGroceryItems = (userGroceriesListId) => {
+//     return fetch(`${remoteURL}/selectedGroceryItems?userGroceriesListId=${userGroceriesListId}`,{
+//         method: "DELETE"})
+//     .then(result => result.json())
+// }

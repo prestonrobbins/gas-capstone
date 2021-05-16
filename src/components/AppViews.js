@@ -21,7 +21,6 @@ export const AppViews = (props) => {
 
   const dingus="dangus"
 
-
   const setUser = props.setUser;
   const hasUser = true;
   return (
