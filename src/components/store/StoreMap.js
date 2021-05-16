@@ -36,62 +36,73 @@ export const StoreMap = () => {
     //   console.log(selectedFoodItems)
     
 
-    //NOTE items below are for canvas only
-      const canvasRef =  useRef(null)
-      const contextRef =  useRef(null)
-      const [isDrawing, setIsDrawing] = useState(false)
-      
-      useEffect(() => {
-          const canvas = canvasRef.current;
-          canvas.width=window.innerWidth * 2;
-          canvas.height=window.innerHeight * 2;
-          canvas.fillStyle="blue";
-          canvas.style.zIndex="5";
-          canvas.style.width=`${window.innerWidth}px`;
-          canvas.style.height=`${window.innerHeight}px`;
-      
-          const context = canvas.getContext("2d")
-          context.scale(2,2)
-          context.lineCap = "round"
-          context.strokeStyle = "red"
-          context.lineWidth = 5
-          contextRef.current = context;
-      }, [])
-      
-          const startDrawing = ({nativeEvent}) => {
-                console.log("startdrawing")
-              const {offsetX, offsetY} = nativeEvent;
+        //NOTE items below are for canvas only
+        const canvasRef =  useRef(null)
+        const canvasDiv =  useRef(null)
+        const contextRef =  useRef(null)
+        const [isDrawing, setIsDrawing] = useState(false)
+        
+        useEffect(() => {
+            const canvas = canvasRef.current;
+            canvas.width=window.innerWidth*0.75 ;
+            canvas.height=window.innerHeight*0.75 ;
+          //   canvas.fillStyle="blue";
+          //   canvas.style.zIndex="5";
+          //   canvas.style.width=`${window.innerWidth}px`;
+          //   canvas.style.height=`${window.innerHeight}px`;
+        
+            const context = canvas.getContext("2d")
+          //   context.scale(1.5,5)
+            context.lineCap = "round"
+            context.strokeStyle = "red"
+            context.lineWidth = 5
+            contextRef.current = context;
+        }, [])
+        
+            const startDrawing = ({nativeEvent}) => {
+                  console.log("startdrawing")
+                const {offsetX, offsetY} = nativeEvent;
+              //   contextRef.current.beginPath()
+              //   contextRef.current.moveTo(offsetX, offsetY)
+                setIsDrawing(true)
+            }
+        
+            const finishDrawing = () => {
+                  console.log("finish drawing")
+              //   contextRef.current.closePath()
+                setIsDrawing(false)
+            }
+        
+            const draw = (nativeEvent) => {
+                console.log("is drawing")
+                console.log(nativeEvent)
+                if(!isDrawing){
+                    return
+                }
+                // const {offsetX, offsetY} = nativeEvent;
+              //   prevX = currX;
+              // prevY = currY;
+              // currX = e.clientX - canvas.offsetLeft;
+              // currY = e.clientY - canvas.offsetTop;
+              //   console.log(clientX)
+              //   contextRef.current.lineTo(offsetX, offsetY)
               contextRef.current.beginPath()
-              contextRef.current.moveTo(offsetX, offsetY)
-              setIsDrawing(true)
-          }
-      
-          const finishDrawing = () => {
-                console.log("finish drawing")
-              contextRef.current.closePath()
-              setIsDrawing(false)
-          }
-      
-          const draw = (nativeEvent) => {
-              console.log("is drawing")
-              if(!isDrawing){
-                  return
-              }
-              const {offsetX, offsetY} = nativeEvent;
-              contextRef.current.lineTo(offsetX, offsetY)
-              contextRef.current.stroke()
-          }
-
-      return (
-          <>
-          <canvas
-                onMouseDown={startDrawing}
-                onMouseUp={finishDrawing}
-                onMouseMove={draw}
-                ref={canvasRef}
-            />
-
-            <h3>Aisle 1</h3>
+                contextRef.current.moveTo(nativeEvent.nativeEvent.layerX, nativeEvent.nativeEvent.layerY) //previous x,y
+                contextRef.current.lineTo(nativeEvent.nativeEvent.layerX, nativeEvent.nativeEvent.layerY) // current x,y
+                contextRef.current.stroke()
+                contextRef.current.closePath()
+            }
+        return (
+            <>
+            <div ref={canvasDiv}>
+            <canvas style={{cursor:"crosshair", border:"2px solid red"}}
+                  onMouseDown={startDrawing}
+                  onMouseUp={finishDrawing}
+                  onMouseMove={draw}
+                  ref={canvasRef}
+            
+              />
+            </div>
             <ul>
             {selectedFilteredFoodItemAisleOne.map(filteredFoodItem => {
                 return <p
