@@ -106,6 +106,8 @@ export const StoreMap = () => {
             }
         return (
             <>
+            <div className="mapPusher">
+                <div className="mapHolder">
             <div ref={canvasDiv}>
             <canvas style={{cursor:"crosshair", border:"2px solid red", background:"red"}}
                   onMouseDown={startDrawing}
@@ -115,106 +117,152 @@ export const StoreMap = () => {
             
               />
             </div>
-            <ul>
-            {selectedFilteredFoodItemAisleOne.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 2</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleTwo.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 3</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleThree.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 4</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleFour.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 5</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleFive.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 6</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleSix.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 7</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleSeven.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 8</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleEight.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 9</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleNine.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
-            <h3>Aisle 10</h3>
-            <ul>
-            {selectedFilteredFoodItemAisleTen.map(filteredFoodItem => {
-                return <p
-                key={filteredFoodItem.id}
-                name={filteredFoodItem.allFoodItem.name}
-                price={filteredFoodItem.allFoodItem.price}
-                >{filteredFoodItem.allFoodItem.name}</p>
-            })}
-            </ul>
+            </div>
+            </div>
 
+            {/* aisles below */}
+
+            {/* aisle 1 */}
+            <div className="aisleOne">
+            <h3 className="aisleHeading">Aisle 1</h3>
+            <select>
+            {selectedFilteredFoodItemAisleOne.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            {/* aisle 2 */}
+            <div className="aisleTwo">
+            <h3 className="aisleHeading">Aisle 2</h3>
+            <select>
+            {selectedFilteredFoodItemAisleTwo.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleThree">
+            <h3 className="aisleHeading">Aisle 3</h3>
+            <select>
+            {selectedFilteredFoodItemAisleThree.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleFour">
+            <h3 className="aisleHeading">Aisle 4</h3>
+            <select>
+            {selectedFilteredFoodItemAisleFour.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleFive">
+            <h3 className="aisleHeading">Aisle 5</h3>
+            <select>
+            {selectedFilteredFoodItemAisleFive.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleSix">
+            <h3 className="aisleHeading">Aisle 6</h3>
+            <select>
+            {selectedFilteredFoodItemAisleSix.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleSeven">
+            <h3 className="aisleHeading">Aisle 7</h3>
+            <select>
+            {selectedFilteredFoodItemAisleSeven.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleEight">
+            <h3 className="aisleHeading">Aisle 8</h3>
+            <select>
+            {selectedFilteredFoodItemAisleEight.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleNine">
+            <h3 className="aisleHeading">Aisle 9</h3>
+            <select>
+            {selectedFilteredFoodItemAisleNine.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+
+
+            <div className="aisleTen">
+            <h3 className="aisleHeading">Aisle 10</h3>
+            <select>
+            {selectedFilteredFoodItemAisleTen.map(filteredFoodItem => {
+                return <option
+                key={filteredFoodItem.id}
+                name={filteredFoodItem.allFoodItem.name}
+                price={filteredFoodItem.allFoodItem.price}
+                >{filteredFoodItem.allFoodItem.name}</option>
+            })}
+            </select>
+            </div>
+            
 
           </>
       )
