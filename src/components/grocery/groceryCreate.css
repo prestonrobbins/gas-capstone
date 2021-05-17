@@ -25,11 +25,20 @@
 .storeItemsScroll{
     overflow: scroll;
     height: 400px;
+    width: 250px;
+    background-color: #C3AE84;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
+
 }
 
 .userListCardHolder{
     overflow: scroll;
     height: 400px;
+    width: 250px;
+    background-color: #C3AE84;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
 }
 
 .storeHeader{
@@ -48,7 +57,42 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+    margin: 15px;
+}
+
+.flexHolder{
+    display: flex;
+    flex-direction: row;
+}
+
+.upCardButton{
+    margin-bottom: none;
+    border: 1px black solid;
+    border-bottom: none;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #8EB948;
+
 }
 
 
+.quantityCounter{
+    text-align: center;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    background-color: white;
+}
 
+.downCardButton{
+    margin-top: none;
+    border: 1px black solid;
+    border-top: none;
+    width: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #8EB948;
+}

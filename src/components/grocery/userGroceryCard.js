@@ -12,12 +12,20 @@ export const UserGroceryCard = ({ userFoodItem, handleDeleteUserGroceryItem, use
     return (
     <>
     <div className="selectedItemCard">
+        <div className="image">image</div>
+        <div className="flexHolder">
+        <div className="priceAndNameHolder">
     <h4>{userFoodItem.allFoodItem.name}</h4>
     <p>${userFoodItem.allFoodItem.price}</p>
-    <p>{count}</p>
-        <button type="button" className="cardButton" 
+    </div>
+    <div className="quantityHolder">
+    <button type="button" className="upCardButton">🔼</button>
+    <p className="quantityCounter">{count}</p>
+        <button type="button" className="downCardButton" 
          onClick={() => handleDeleteUserGroceryItem(userFoodItem.id)}
-        >remove</button>
+        >🔽</button>
+        </div>
+        </div>
         </div>
     </>
       );
