@@ -11,12 +11,14 @@ export const UserGroceryCard = ({ userFoodItem, handleDeleteUserGroceryItem, use
     }
     return (
     <>
+    <div className="selectedItemCard">
     <h4>{userFoodItem.allFoodItem.name}</h4>
     <p>${userFoodItem.allFoodItem.price}</p>
     <p>{count}</p>
         <button type="button" className="cardButton" 
          onClick={() => handleDeleteUserGroceryItem(userFoodItem.id)}
         >remove</button>
+        </div>
     </>
       );
   };

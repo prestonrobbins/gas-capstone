@@ -120,8 +120,7 @@ export const GroceryListCreateForm = (dingus) => {
 
   return (
     <>
-        <h3>Select Your Items</h3>
-
+      <div className="createContentPusher">
         <div className="groceryEditHolder">
           <div className="userList">
             <div>
@@ -177,6 +176,7 @@ export const GroceryListCreateForm = (dingus) => {
                 </div>
 
           </div>
+        </div>
         </div>
       </>
   );

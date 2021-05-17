@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//!need to import fetch calls for info
+import "./GroceryList.css"
 import { useHistory } from 'react-router-dom'
 import { GroceryCard } from './GroceryCard'
 //TODO do i need all these? such as the edit since we dont use it in the return?
@@ -33,11 +33,12 @@ export const GroceryList = () => {
 
       return(
           <>
+          <div className="listContentPusher">
             <div className="listContentContainer">
               <div className="listHeaderSection">
-              <h3>Your Lists</h3>
+              <h3 className="yourListsHeading">Your Lists</h3>
               <button type="button"
-                    className="btn"
+                    className="btnCreateList"
                     onClick={() => { history.push("/storeList") }}>
                     Create New List
                 </button>
@@ -53,6 +54,7 @@ export const GroceryList = () => {
                 />
                 )}       
             </div>
+          </div>
           </div>
           </>
       )

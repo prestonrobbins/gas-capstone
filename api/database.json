@@ -32,6 +32,12 @@
       "userId": 1,
       "storeId": 1,
       "id": 1
+    },
+    {
+      "name": "fdsag",
+      "userId": 1,
+      "storeId": 1,
+      "id": 2
     }
   ],
   "selectedGroceryItems": [
@@ -79,6 +85,11 @@
       "allFoodItemId": 8,
       "userGroceriesListId": 1,
       "id": 9
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 10
     }
   ],
   "stores": [
