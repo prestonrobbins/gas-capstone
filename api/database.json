@@ -28,46 +28,13 @@
   ],
   "userGroceryLists": [
     {
-      "name": "dis be me list",
+      "name": "eat people",
       "userId": 1,
-      "storeId": 1,
-      "id": 1
-    },
-    {
-      "name": "fdsag",
-      "userId": 1,
-      "storeId": 1,
-      "id": 2
-    },
-    {
-      "name": "lets eat people",
-      "userId": 1,
-      "storeId": 1,
-      "id": 3
-    },
-    {
-      "name": "not eating people",
-      "userId": 1,
-      "storeId": 1,
-      "id": 4
+      "storeId": 2,
+      "id": 6
     }
   ],
   "selectedGroceryItems": [
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 1
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 2
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 3
-    },
     {
       "allFoodItemId": 3,
       "userGroceriesListId": 1,
@@ -99,36 +66,6 @@
       "id": 9
     },
     {
-      "allFoodItemId": 22,
-      "userGroceriesListId": 2,
-      "id": 10
-    },
-    {
-      "allFoodItemId": 22,
-      "userGroceriesListId": 2,
-      "id": 11
-    },
-    {
-      "allFoodItemId": 22,
-      "userGroceriesListId": 2,
-      "id": 12
-    },
-    {
-      "allFoodItemId": 22,
-      "userGroceriesListId": 2,
-      "id": 13
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 2,
-      "id": 14
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 2,
-      "id": 15
-    },
-    {
       "allFoodItemId": 1,
       "userGroceriesListId": 2,
       "id": 16
@@ -157,106 +94,6 @@
       "allFoodItemId": 3,
       "userGroceriesListId": 2,
       "id": 21
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 3,
-      "id": 22
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 3,
-      "id": 23
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 3,
-      "id": 24
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 3,
-      "id": 25
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 3,
-      "id": 26
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 4,
-      "id": 30
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 4,
-      "id": 31
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 4,
-      "id": 32
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 4,
-      "id": 33
-    },
-    {
-      "allFoodItemId": 2,
-      "userGroceriesListId": 4,
-      "id": 34
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 35
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 36
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 37
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 38
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 39
-    },
-    {
-      "allFoodItemId": 10,
-      "userGroceriesListId": 4,
-      "id": 40
-    },
-    {
-      "allFoodItemId": 9,
-      "userGroceriesListId": 4,
-      "id": 41
-    },
-    {
-      "allFoodItemId": 9,
-      "userGroceriesListId": 4,
-      "id": 42
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 4,
-      "id": 43
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 4,
-      "id": 44
     },
     {
       "allFoodItemId": 1,
@@ -377,6 +214,61 @@
       "allFoodItemId": 30,
       "userGroceriesListId": 4,
       "id": 68
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 77
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 6,
+      "id": 78
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 6,
+      "id": 79
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 6,
+      "id": 80
+    },
+    {
+      "allFoodItemId": 8,
+      "userGroceriesListId": 6,
+      "id": 81
+    },
+    {
+      "allFoodItemId": 10,
+      "userGroceriesListId": 6,
+      "id": 82
+    },
+    {
+      "allFoodItemId": 10,
+      "userGroceriesListId": 6,
+      "id": 83
+    },
+    {
+      "allFoodItemId": 13,
+      "userGroceriesListId": 6,
+      "id": 84
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 6,
+      "id": 85
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 6,
+      "id": 86
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 6,
+      "id": 87
     }
   ],
   "stores": [

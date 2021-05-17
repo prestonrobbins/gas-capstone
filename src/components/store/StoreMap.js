@@ -62,12 +62,12 @@ export const StoreMap = () => {
             context.fillRect(425, 275+75, 75, 175) //aisle 3
             context.fillRect(550, 50+75, 75, 175)  //aisle 2
             context.fillRect(550, 275+75, 75, 175) //aisle 1
-            context.fillRect(50, -10, 275, 75)  //aisle 10
-            context.fillRect(350, -10, 275, 75)  //aisle 10
+            context.fillRect(50, -10, 275, 75)  
+            context.fillRect(350, -10, 275, 75)  
             context.lineCap = "round"
             // context.fillStyle = "white"
-            context.strokeStyle = "blue"
-            context.lineWidth = 5
+            context.strokeStyle = "red"
+            context.lineWidth = 15
             contextRef.current = context;
         }, [])
         
@@ -109,7 +109,7 @@ export const StoreMap = () => {
             <div className="mapPusher">
                 <div className="mapHolder">
             <div ref={canvasDiv}>
-            <canvas style={{cursor:"crosshair", border:"2px solid red", background:"red"}}
+            <canvas style={{cursor:"crosshair", border:"2px solid black", background:"#C3AE84"}}
                   onMouseDown={startDrawing}
                   onMouseUp={finishDrawing}
                   onMouseMove={draw}
