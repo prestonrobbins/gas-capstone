@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
 
+
 export const UserGroceryCard = ({ userFoodItem, handleDeleteUserGroceryItem, userGroceryList }) => {
     let count = 0
     for(const item of userGroceryList){
@@ -12,7 +13,9 @@ export const UserGroceryCard = ({ userFoodItem, handleDeleteUserGroceryItem, use
     return (
     <>
     <div className="selectedItemCard">
-        <div className="image">image</div>
+        <img className="foodImage" src={require(`../../images/${userFoodItem.allFoodItem.foodItemImageURL? userFoodItem.allFoodItem.foodItemImageURL: "gasLogo.png"}`).default} alt="food Image"></img>
+
+        {/* <div className="image">image</div> */}
         <div className="flexHolder">
         <div className="priceAndNameHolder">
     <h4>{userFoodItem.allFoodItem.name}</h4>

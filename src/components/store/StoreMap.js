@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link, useParams, Route } from "react-router-dom";
 import { useHistory } from 'react-router-dom'
-import { getSelectedFoodItemsById } from "../modules/FetchManager"
+import { getSelectedFoodItemsById, getFoodItemById } from "../modules/FetchManager"
 import "./StoreMap.css"
 
 export const StoreMap = () => {
@@ -32,6 +32,8 @@ export const StoreMap = () => {
       const selectedFilteredFoodItemAisleNine = selectedFoodItems.filter(foodItem => foodItem.allFoodItem.aisleId === 9)
       const selectedFilteredFoodItemAisleTen = selectedFoodItems.filter(foodItem => foodItem.allFoodItem.aisleId === 10)
 
+  
+    
     //   console.log("aisle one objects", selectedFilteredFoodItemAisleOne)
     //   console.log(selectedFoodItems)
     
@@ -41,6 +43,8 @@ export const StoreMap = () => {
         const canvasDiv =  useRef(null)
         const contextRef =  useRef(null)
         const [isDrawing, setIsDrawing] = useState(false)
+
+        
         
         useEffect(() => {
             const canvas = canvasRef.current;
