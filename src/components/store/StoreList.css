@@ -1,0 +1,39 @@
+.storeCardPusher{
+    display: flex;
+    justify-content: center;
+}
+
+.storeCardHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F2EBCF;
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 5%;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.btnSelectStore{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #8EB948;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.displayStoreCards{
+    overflow: scroll;
+    height: 400px;
+    width: 400px;
+    background-color: #C3AE84;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
+    padding: 15px;
+}
+
+
+

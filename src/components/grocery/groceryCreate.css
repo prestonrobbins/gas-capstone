@@ -19,7 +19,6 @@
     border-radius: 20px;
     margin-top: 5%;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
-
 }
 
 .storeItemsScroll{
@@ -63,6 +62,7 @@
 .flexHolder{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .upCardButton{
@@ -95,4 +95,16 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: #8EB948;
+}
+
+.storeHeader{
+    margin-top: 20px;
+}
+
+.allFoodItemCard{
+    background-color: #A1D0D8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+    margin: 15px;
 }

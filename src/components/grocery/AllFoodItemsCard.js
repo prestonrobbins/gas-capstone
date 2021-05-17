@@ -22,11 +22,13 @@ export const AllFoodItemsCard = ({ foodItem, handleAddFoodItem}) => {
 
     return (
     <>
+    <div className="allFoodItemCard">
     <h4>{foodItem.name}</h4>
     <h5>{foodItem.price}</h5>
         <button type="button" className="cardButton" 
             onClick={() => handleAddFoodItem(foodItem)}
         >Add</button>
+        </div>
     </>
       );
   };

@@ -154,14 +154,14 @@ export const GroceryListCreateForm = (dingus) => {
             <div className="storeHeader">
             <h3>Choose Your Items</h3>
 
-            <select class="categories">
+            {/* <select class="categories">
               <option value="category">Category</option>
               <option value="fruit">Fruit</option>
               <option value="veggies">Veggies</option>
               <option value="meat">Meat</option>
               <option value="snacks">Snacks</option>
               <option value="dairy">Dairy</option>
-              </select>
+              </select> */}
               </div>
               <div className="storeItemsScroll">
               {allFoodItems

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { StoreCard } from "./StoreCard";
-//TODO do i need all these? such as the edit since we dont use it in the return?
+import "./StoreList.css"
 import { getStoreById, getAllStores, createGroceryList } from "../modules/FetchManager";
 
 export const StoreList = (user) => {
@@ -47,6 +47,8 @@ export const StoreList = (user) => {
 
   return (
     <>
+    <div className="storeCardPusher">
+      <div className="storeCardHolder">
       <div className="listHeaderSection">
         <h3>Choose a Store</h3>
       </div>
@@ -58,6 +60,8 @@ export const StoreList = (user) => {
             // setUserGroceryList={setUserGroceryList}
           />
         ))}
+        </div>
+      </div>
       </div>
     </>
   );
