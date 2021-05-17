@@ -38,7 +38,9 @@ export const Login = () => {
     }
 
     return (
+        <div className="loginHolderForAll">
         <main className="container--login">
+            
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
@@ -47,8 +49,8 @@ export const Login = () => {
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>Guys Against Shopping</h1>
                     <h2>Please sign in</h2>
+                    <div className="emailSignInAndButton">
                     <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             id="email"
                             className="form-control"
@@ -58,16 +60,18 @@ export const Login = () => {
                             onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
-                        <button type="submit">
+                        <button className="signInButton"type="submit">
                             Sign in
                         </button>
                     </fieldset>
+                    </div>
                 </form>
             </section>
             <section className="link--register">
                 <Link to="/register">Register for an account</Link>
             </section>
         </main>
+        </div>
     )
 }
 

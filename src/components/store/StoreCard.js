@@ -35,7 +35,7 @@ export const StoreCard = ({ store }) => {
             {store.address}
         </h3>
 
-          <button onClick={ handleStoreSelect }>Choose Store</button>
+          <button className="btnSelectStore" onClick={ handleStoreSelect }>Choose Store</button>
       </>
     );
 };

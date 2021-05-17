@@ -28,28 +28,19 @@
   ],
   "userGroceryLists": [
     {
-      "name": "dis be me list",
+      "name": "dont eat people",
+      "userId": 1,
+      "storeId": 2,
+      "id": 8
+    },
+    {
+      "name": "all items",
       "userId": 1,
       "storeId": 1,
-      "id": 1
+      "id": 9
     }
   ],
   "selectedGroceryItems": [
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 1
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 2
-    },
-    {
-      "allFoodItemId": 1,
-      "userGroceriesListId": 1,
-      "id": 3
-    },
     {
       "allFoodItemId": 3,
       "userGroceriesListId": 1,
@@ -79,6 +70,426 @@
       "allFoodItemId": 8,
       "userGroceriesListId": 1,
       "id": 9
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 2,
+      "id": 16
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 2,
+      "id": 17
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 2,
+      "id": 18
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 2,
+      "id": 19
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 2,
+      "id": 20
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 2,
+      "id": 21
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 4,
+      "id": 45
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 46
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 47
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 48
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 49
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 50
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 51
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 52
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 53
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 54
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 55
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 56
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 57
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 58
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 59
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 60
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 61
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 62
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 63
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 64
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 65
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 66
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 67
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 4,
+      "id": 68
+    },
+    {
+      "allFoodItemId": 6,
+      "userGroceriesListId": 7,
+      "id": 94
+    },
+    {
+      "allFoodItemId": 6,
+      "userGroceriesListId": 7,
+      "id": 95
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 7,
+      "id": 96
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 7,
+      "id": 97
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 7,
+      "id": 98
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 7,
+      "id": 99
+    },
+    {
+      "allFoodItemId": 11,
+      "userGroceriesListId": 7,
+      "id": 100
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 8,
+      "id": 103
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 8,
+      "id": 104
+    },
+    {
+      "allFoodItemId": 5,
+      "userGroceriesListId": 8,
+      "id": 105
+    },
+    {
+      "allFoodItemId": 11,
+      "userGroceriesListId": 8,
+      "id": 106
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 107
+    },
+    {
+      "allFoodItemId": 1,
+      "userGroceriesListId": 9,
+      "id": 108
+    },
+    {
+      "allFoodItemId": 2,
+      "userGroceriesListId": 9,
+      "id": 109
+    },
+    {
+      "allFoodItemId": 3,
+      "userGroceriesListId": 9,
+      "id": 110
+    },
+    {
+      "allFoodItemId": 4,
+      "userGroceriesListId": 9,
+      "id": 111
+    },
+    {
+      "allFoodItemId": 5,
+      "userGroceriesListId": 9,
+      "id": 112
+    },
+    {
+      "allFoodItemId": 6,
+      "userGroceriesListId": 9,
+      "id": 113
+    },
+    {
+      "allFoodItemId": 7,
+      "userGroceriesListId": 9,
+      "id": 114
+    },
+    {
+      "allFoodItemId": 8,
+      "userGroceriesListId": 9,
+      "id": 115
+    },
+    {
+      "allFoodItemId": 9,
+      "userGroceriesListId": 9,
+      "id": 116
+    },
+    {
+      "allFoodItemId": 10,
+      "userGroceriesListId": 9,
+      "id": 117
+    },
+    {
+      "allFoodItemId": 11,
+      "userGroceriesListId": 9,
+      "id": 118
+    },
+    {
+      "allFoodItemId": 12,
+      "userGroceriesListId": 9,
+      "id": 119
+    },
+    {
+      "allFoodItemId": 13,
+      "userGroceriesListId": 9,
+      "id": 120
+    },
+    {
+      "allFoodItemId": 14,
+      "userGroceriesListId": 9,
+      "id": 121
+    },
+    {
+      "allFoodItemId": 15,
+      "userGroceriesListId": 9,
+      "id": 122
+    },
+    {
+      "allFoodItemId": 16,
+      "userGroceriesListId": 9,
+      "id": 123
+    },
+    {
+      "allFoodItemId": 17,
+      "userGroceriesListId": 9,
+      "id": 124
+    },
+    {
+      "allFoodItemId": 18,
+      "userGroceriesListId": 9,
+      "id": 125
+    },
+    {
+      "allFoodItemId": 19,
+      "userGroceriesListId": 9,
+      "id": 126
+    },
+    {
+      "allFoodItemId": 20,
+      "userGroceriesListId": 9,
+      "id": 127
+    },
+    {
+      "allFoodItemId": 21,
+      "userGroceriesListId": 9,
+      "id": 128
+    },
+    {
+      "allFoodItemId": 22,
+      "userGroceriesListId": 9,
+      "id": 129
+    },
+    {
+      "allFoodItemId": 23,
+      "userGroceriesListId": 9,
+      "id": 130
+    },
+    {
+      "allFoodItemId": 24,
+      "userGroceriesListId": 9,
+      "id": 131
+    },
+    {
+      "allFoodItemId": 25,
+      "userGroceriesListId": 9,
+      "id": 132
+    },
+    {
+      "allFoodItemId": 26,
+      "userGroceriesListId": 9,
+      "id": 133
+    },
+    {
+      "allFoodItemId": 27,
+      "userGroceriesListId": 9,
+      "id": 134
+    },
+    {
+      "allFoodItemId": 28,
+      "userGroceriesListId": 9,
+      "id": 135
+    },
+    {
+      "allFoodItemId": 29,
+      "userGroceriesListId": 9,
+      "id": 136
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 9,
+      "id": 137
+    },
+    {
+      "allFoodItemId": 31,
+      "userGroceriesListId": 9,
+      "id": 143
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 144
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 145
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 146
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 147
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 148
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 149
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 150
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 151
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 152
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 153
+    },
+    {
+      "allFoodItemId": 30,
+      "userGroceriesListId": 8,
+      "id": 154
     }
   ],
   "stores": [
@@ -105,7 +516,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "fruit",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "banana.png"
     },
     {
       "id": 2,
@@ -113,7 +524,7 @@
       "price": 2.99,
       "aisleId": 2,
       "categoryID": "fruit",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "apple.png"
     },
     {
       "id": 3,
@@ -121,7 +532,7 @@
       "price": 3.3,
       "aisleId": 1,
       "categoryID": "fruit",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "grapes.png"
     },
     {
       "id": 4,
@@ -129,7 +540,7 @@
       "price": 5.67,
       "aisleId": 5,
       "categoryID": "meat",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "chicken.png"
     },
     {
       "id": 5,
@@ -137,7 +548,7 @@
       "price": 2.5,
       "aisleId": 3,
       "categoryID": "veggies",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "lettuce.png"
     },
     {
       "id": 6,
@@ -145,7 +556,7 @@
       "price": 1.29,
       "aisleId": 8,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "goldFish.png"
     },
     {
       "id": 7,
@@ -153,7 +564,7 @@
       "price": 3.99,
       "aisleId": 8,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "gum.png"
     },
     {
       "id": 8,
@@ -161,7 +572,7 @@
       "price": 5.99,
       "aisleId": 5,
       "categoryID": "meat",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "pork.png"
     },
     {
       "id": 9,
@@ -169,7 +580,7 @@
       "price": 2.89,
       "aisleId": 3,
       "categoryID": "veggies",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "tomato.png"
     },
     {
       "id": 10,
@@ -177,7 +588,7 @@
       "price": 3.99,
       "aisleId": 2,
       "categoryID": "fruit",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "avocado.png"
     },
     {
       "id": 11,
@@ -185,7 +596,7 @@
       "price": 3.99,
       "aisleId": 8,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "protienBar.png"
     },
     {
       "id": 12,
@@ -193,7 +604,7 @@
       "price": 3.99,
       "aisleId": 10,
       "categoryID": "dairy",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "butter.png"
     },
     {
       "id": 13,
@@ -201,7 +612,7 @@
       "price": 3.99,
       "aisleId": 8,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "astroFood.png"
     },
     {
       "id": 14,
@@ -209,7 +620,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "dairy",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "milk.png"
     },
     {
       "id": 15,
@@ -217,7 +628,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "icecream.png"
     },
     {
       "id": 16,
@@ -225,7 +636,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "gummyBears.png"
     },
     {
       "id": 17,
@@ -233,7 +644,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "sourpatchkids.png"
     },
     {
       "id": 18,
@@ -241,7 +652,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "swedishfish.png"
     },
     {
       "id": 19,
@@ -249,7 +660,7 @@
       "price": 3.99,
       "aisleId": 5,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "steak.png"
     },
     {
       "id": 20,
@@ -257,7 +668,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "pinneapple.png"
     },
     {
       "id": 21,
@@ -265,7 +676,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "juice.png"
     },
     {
       "id": 22,
@@ -273,7 +684,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "yogurt.png"
     },
     {
       "id": 23,
@@ -281,7 +692,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "bread.png"
     },
     {
       "id": 24,
@@ -289,7 +700,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "pasta.png"
     },
     {
       "id": 25,
@@ -297,7 +708,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "cheese.png"
     },
     {
       "id": 26,
@@ -305,7 +716,7 @@
       "price": 3.99,
       "aisleId": 1,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "celery.png"
     },
     {
       "id": 27,
@@ -313,7 +724,7 @@
       "price": 3.99,
       "aisleId": 2,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "blueberry.png"
     },
     {
       "id": 28,
@@ -321,7 +732,7 @@
       "price": 3.99,
       "aisleId": 2,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "strawberry.png"
     },
     {
       "id": 29,
@@ -329,15 +740,15 @@
       "price": 3.99,
       "aisleId": 5,
       "categoryID": "snacks",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "beefJerky.png"
     },
     {
       "id": 30,
-      "name": "dakota",
-      "price": 3.99,
+      "name": "Jeremiah",
+      "price": 11.87,
       "aisleId": 10,
       "categoryID": "meat",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "jeremiah.png"
     },
     {
       "id": 31,
@@ -345,7 +756,7 @@
       "price": 3.99,
       "aisleId": 10,
       "categoryID": "meat",
-      "foodItemImageURL": ""
+      "foodItemImageURL": "duck.png"
     }
   ],
   "categories": [

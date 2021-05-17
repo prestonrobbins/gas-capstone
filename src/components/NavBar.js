@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useHistory } from "react-router-dom"
+import "./NavBar"
 // import "bootstrap/dist/css/bootstrap.min.css"
 // import "./NavBar.css"
 const clearUser = () => {
@@ -16,6 +17,7 @@ export const NavBar = () => {
     <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">
 
       <ul className="nav nav-pills nav-fill">
+        
         {/* <li className="nav-item">
           <Link className="nav-link" to="/">Articles</Link>
         </li>

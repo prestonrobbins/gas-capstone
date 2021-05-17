@@ -1,0 +1,55 @@
+.container--login{
+    background-color: #F2EBCF;
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 15%;
+}
+
+.loginHolder{
+    justify-content: center;
+}
+
+.loginHolderForAll{
+    display:flex;
+    justify-content: center;
+  }
+
+  fieldset{
+    border:none;
+  }
+  
+  .emailSignInAndButton{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  .signInButton{
+      padding: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #8EB948;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+  }
+  .signInButton:hover{
+    background-color: #19404D;
+    color:white;
+    box-shadow: none;
+  }
+
+  .form-control{
+    height:33px;
+  }
+
+  body{
+    background-color: #A1D0D8;
+  }
+
+

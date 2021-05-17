@@ -74,7 +74,7 @@ export const GroceryListCreateForm = (dingus) => {
   //     key: userGroceryList.id,
   //     name: userGroceryList.name
   //   };
-  
+
   //   updateExistingUserGroceryList(editedUserGroceryList)
   //   //!this is for the submit button, right? and if so, i dont beleive i need it jsut yet.
   //   .then(() => history.push("/store")
@@ -120,8 +120,7 @@ export const GroceryListCreateForm = (dingus) => {
 
   return (
     <>
-        <h3>Select Your Items</h3>
-
+      <div className="createContentPusher">
         <div className="groceryEditHolder">
           <div className="userList">
             <div>
@@ -155,14 +154,14 @@ export const GroceryListCreateForm = (dingus) => {
             <div className="storeHeader">
             <h3>Choose Your Items</h3>
 
-            <select class="categories">
+            {/* <select class="categories">
               <option value="category">Category</option>
               <option value="fruit">Fruit</option>
               <option value="veggies">Veggies</option>
               <option value="meat">Meat</option>
               <option value="snacks">Snacks</option>
               <option value="dairy">Dairy</option>
-              </select>
+              </select> */}
               </div>
               <div className="storeItemsScroll">
               {allFoodItems
@@ -177,6 +176,7 @@ export const GroceryListCreateForm = (dingus) => {
                 </div>
 
           </div>
+        </div>
         </div>
       </>
   );
