@@ -61,7 +61,7 @@ export const Login = () => {
                     </fieldset>
                     <fieldset>
                         <button className="signInButton"type="submit">
-                            Sign in
+                            Sign In
                         </button>
                     </fieldset>
                     </div>

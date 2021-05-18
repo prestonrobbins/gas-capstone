@@ -25,7 +25,7 @@
 
 .displayStoreCards{
     overflow: scroll;
-    height: 400px;
+    height: 500px;
     background-color: #C3AE84;
     border-radius: 10px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
@@ -41,4 +41,8 @@
     
 }
 
-
+.storeListHeader{
+    margin-top: 0px;
+    font-size: 2em;
+    font-family: roboto;
+}
