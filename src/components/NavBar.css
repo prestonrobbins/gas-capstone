@@ -1,0 +1,20 @@
+.sidenav{
+    background-color: #19404D;
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-top: -10px;
+    height: 100em;
+    width: 10em;
+    display: static;
+    float: left;
+}
+
+.navButton{
+    height: 5em;
+    border: none;
+    background-color: #C3AE84;
+    margin: 5px;
+    border-radius: 3px;
+    color: #19404D;
+}

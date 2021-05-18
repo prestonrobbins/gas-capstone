@@ -82,6 +82,7 @@ export const StoreMap = () => {
         //   canvas.style.width=`${window.innerWidth}px`;
         //   canvas.style.height=`${window.innerHeight}px`;
         const context = canvas.getContext("2d")
+        context.fillStyle = "blue"
         context.fillRect(50, 50 + 75, 75, 175)  //aisle 10
         context.fillRect(50, 275 + 75, 75, 175) //aisle 9
         context.fillRect(175, 50 + 75, 75, 175)  //aisle 8
@@ -128,8 +129,11 @@ export const StoreMap = () => {
     }
     return (
         <>
+    
             <div className="mapPusher">
                 <div className="mapHolder">
+                    <h1 className="storeMapHeading">Draw Your Way Through The Store Map!</h1>
+                    <h3></h3>
                     <div ref={canvasDiv}>
                         <canvas style={{ cursor: "crosshair", border: "2px solid black", background: "#C3AE84" }}
                             onMouseDown={startDrawing}
