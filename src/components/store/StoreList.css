@@ -4,15 +4,13 @@
 }
 
 .storeCardHolder{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: #F2EBCF;
-    width: 40%;
+    width: 45%;
     padding: 30px;
     border-radius: 20px;
     margin-top: 5%;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+
 }
 
 .btnSelectStore{
@@ -27,13 +25,24 @@
 
 .displayStoreCards{
     overflow: scroll;
-    height: 400px;
-    width: 400px;
+    height: 500px;
     background-color: #C3AE84;
     border-radius: 10px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
     padding: 15px;
 }
 
+.StoreCard{
+    background-color: #A1D0D8;
+    padding:20px;
+    margin:30px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+    
+}
 
-
+.storeListHeader{
+    margin-top: 0px;
+    font-size: 2em;
+    font-family: roboto;
+}

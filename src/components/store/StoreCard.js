@@ -28,6 +28,7 @@ export const StoreCard = ({ store }) => {
   
   return (
       <>
+      <div className="StoreCard">
       <h3 className="cardName">
             {store.name}
         </h3>
@@ -36,6 +37,7 @@ export const StoreCard = ({ store }) => {
         </h3>
 
           <button className="btnSelectStore" onClick={ handleStoreSelect }>Choose Store</button>
+          </div>
       </>
     );
 };

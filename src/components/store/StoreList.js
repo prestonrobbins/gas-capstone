@@ -50,7 +50,7 @@ export const StoreList = (user) => {
     <div className="storeCardPusher">
       <div className="storeCardHolder">
       <div className="listHeaderSection">
-        <h3>Choose a Store</h3>
+        <h3 className="storeListHeader">Choose a Store</h3>
       </div>
       <div className="displayStoreCards">
         {stores.map((storeItem) => (

@@ -126,6 +126,7 @@ export const GroceryListCreateForm = (dingus) => {
             <div>
             <form>
             <h4><input
+              placeholder="Name Your List"
               type="text"
               required
               className="form-control"
@@ -146,7 +147,7 @@ export const GroceryListCreateForm = (dingus) => {
                   />
                     )}
               </div>
-              <button className="addToList" onClick={() => {handleSaveButton()}}>save list</button>
+              <button className="addToList" onClick={() => {handleSaveButton()}}>Save List</button>
               <button className="addToList" onClick={() => {handleSaveButtonAndViewMap()}}>View Map</button>
           </div>
 

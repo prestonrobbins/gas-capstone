@@ -19,16 +19,25 @@ export const AllFoodItemsCard = ({ foodItem, handleAddFoodItem}) => {
     //       return createSelectedGroceryListItem(newSelectedGroceryItem)
     //     }
 
-
     return (
     <>
-    <div className="allFoodItemCard">
-    <h4>{foodItem.name}</h4>
-    <h5>{foodItem.price}</h5>
-        <button type="button" className="cardButton" 
+<div className="selectedItemCard">
+        <img className="foodImage" src={require(`../../images/${foodItem.foodItemImageURL? foodItem.foodItemImageURL: "gasLogo.png"}`).default} alt="food Image"></img>
+
+        {/* <div className="image">image</div> */}
+        <div className="flexHolder">
+        <div className="priceAndNameHolder">
+        <h4>{foodItem.name}</h4>
+    <p>${foodItem.price}</p>
+    </div>
+    <div className="quantityHolder">
+    <button type="button" className="cardButton" 
             onClick={() => handleAddFoodItem(foodItem)}
         >Add</button>
         </div>
+        </div>
+        </div>
+
     </>
       );
   };

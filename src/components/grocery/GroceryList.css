@@ -14,11 +14,12 @@
 }
 
 .contentHolderLeft{
-    background-color: #C3AE84;
+    background-color: #A1D0D8;
     padding:20px;
     margin:30px;
     border-radius: 20px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+    
 }
 
 .cardButton{
@@ -29,12 +30,18 @@
       border: none;
       border-radius: 5px;
       box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
-      margin-right:20px;
+      margin-right:5px;
 }
 .cardButton:hover{
     background-color: #19404D;
     color:white;
     box-shadow: none;
+  }
+
+  .cardListName{
+    font-size: 1.5em;
+    font-family: roboto;
+
   }
 
   .btnCreateList{
@@ -47,6 +54,9 @@
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
     margin-right:20px;
     margin-left: 30px;
+    margin-top: 30px;
+    height: 40px;
+    
   }
   .btnCreateList:hover{
     background-color: #19404D;
@@ -62,4 +72,17 @@
       margin-top: 10px;
       overflow-y: scroll;
       height:400px;
+      box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
+      background-color: #C3AE84;
+    border-radius: 10px;
   }
+
+  .yourListsHeading{
+    font-size: 2em;
+    font-family: roboto;
+}
+
+.listHeaderSection{
+    display: flex;
+    flex-direction: row;
+}
