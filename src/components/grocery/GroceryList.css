@@ -14,11 +14,12 @@
 }
 
 .contentHolderLeft{
-    background-color: #C3AE84;
+    background-color: #A1D0D8;
     padding:20px;
     margin:30px;
     border-radius: 20px;
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+    
 }
 
 .cardButton{
@@ -62,4 +63,7 @@
       margin-top: 10px;
       overflow-y: scroll;
       height:400px;
+      box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2) inset;
+      background-color: #C3AE84;
+    border-radius: 10px;
   }

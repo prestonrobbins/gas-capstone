@@ -76,13 +76,13 @@ export const StoreMap = () => {
     useEffect(() => {
         const canvas = canvasRef.current;
         canvas.width = window.innerWidth * 0.48;
-        canvas.height = window.innerHeight * 0.85;
+        canvas.height = window.innerHeight * 0.80;
         //   canvas.fillStyle="blue";
         //   canvas.style.zIndex="5";
         //   canvas.style.width=`${window.innerWidth}px`;
         //   canvas.style.height=`${window.innerHeight}px`;
         const context = canvas.getContext("2d")
-        context.fillStyle = "blue"
+        context.fillStyle = "#18414D"
         context.fillRect(50, 50 + 75, 75, 175)  //aisle 10
         context.fillRect(50, 275 + 75, 75, 175) //aisle 9
         context.fillRect(175, 50 + 75, 75, 175)  //aisle 8

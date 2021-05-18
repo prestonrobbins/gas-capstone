@@ -20,9 +20,9 @@ export const NavBar = () => {
 <>
     <div class="sidenav">
     <img src={logo} />
-    <button className="navButton">My Lists</button>
-    <button className="navButton">New List</button>
-    <button className="navButton">Logout</button>
+    <Link className="nav-link" to="/home"><button className="navButton">My Lists</button></Link>
+    <Link className="nav-link" to="/home"><button className="navButton">New List</button></Link>
+    <Link className="nav-link" onClick={() => {handleLogout()}}><button className="navButton">Logout</button></Link>
   </div>
 </>
     // <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">

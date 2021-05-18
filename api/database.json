@@ -40,10 +40,16 @@
       "id": 9
     },
     {
-      "name": "woop",
+      "name": "",
+      "userId": 1,
+      "storeId": 2,
+      "id": 10
+    },
+    {
+      "name": "new list",
       "userId": 1,
       "storeId": 1,
-      "id": 10
+      "id": 11
     }
   ],
   "selectedGroceryItems": [
@@ -683,36 +689,6 @@
       "id": 191
     },
     {
-      "allFoodItemId": 8,
-      "userGroceriesListId": 10,
-      "id": 192
-    },
-    {
-      "allFoodItemId": 8,
-      "userGroceriesListId": 10,
-      "id": 193
-    },
-    {
-      "allFoodItemId": 8,
-      "userGroceriesListId": 10,
-      "id": 194
-    },
-    {
-      "allFoodItemId": 8,
-      "userGroceriesListId": 10,
-      "id": 195
-    },
-    {
-      "allFoodItemId": 11,
-      "userGroceriesListId": 10,
-      "id": 196
-    },
-    {
-      "allFoodItemId": 11,
-      "userGroceriesListId": 10,
-      "id": 197
-    },
-    {
       "allFoodItemId": 11,
       "userGroceriesListId": 10,
       "id": 198
@@ -827,11 +803,11 @@
     {
       "id": 2,
       "name": "Kroger",
-      "address": "430 Spooky Streets"
+      "address": "430 Spooky Street"
     },
     {
       "id": 3,
-      "name": "windixie ",
+      "name": "Windixie ",
       "address": "908 decent movie street"
     }
   ],

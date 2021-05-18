@@ -1,97 +1,106 @@
-.mapPusher{
-    display: flex;
-    justify-content: center;
-    padding-top: 0px;
+.mapPusher {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
 }
 
-.mapHolder{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #F2EBCF;
-    width: 48.8%;
-    padding: 30px;
-    border-radius: 20px;
-    margin-top: 5%;
-    box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, .2);
+.mapHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f2ebcf;
+  width: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
-.aisleOne{
-    margin-top: -550px;
-    margin-left: 925px;
-    z-index: 50;
-    position: absolute;
+.aisleOne {
+  margin-top: -550px;
+  margin-left: 1000px;
+  z-index: 50;
+  position: absolute;
 }
 
-.aisleTwo{
-margin-top: -550px;
-    margin-left: 800px;
-    z-index: 50;
-    position: absolute;
+.aisleTwo {
+  margin-top: -550px;
+  margin-left: 875px;
+  z-index: 50;
+  position: absolute;
 }
 
-.aisleThree{
-    margin-top: -550px;
-        margin-left: 675px;
-        z-index: 50;
-        position: absolute;
-    }
-
-.aisleFour{
-    margin-top: -550px;
-    margin-left: 550px;
-    z-index: 50;
-    position: absolute;
-        }
-
-.aisleFive{
-    margin-top: -550px;
-    margin-left: 425px;
-    z-index: 50;
-    position: absolute;
-        }
-
-.aisleSix{
-    margin-top: -325px;
-    margin-left: 925px;
-    z-index: 50;
-    position: absolute;
-        }
-
-        .aisleSeven{
-            margin-top: -325px;
-            margin-left: 800px;
-            z-index: 50;
-            position: absolute;
-                }
-
-                .aisleEight{
-                    margin-top: -325px;
-                    margin-left: 675px;
-                    z-index: 50;
-                    position: absolute;
-                        }
-
-                        .aisleNine{
-                            margin-top: -325px;
-                            margin-left: 550px;
-                            z-index: 50;
-                            position: absolute;
-                                }
-
-                                .aisleTen{
-                                    margin-top: -325px;
-                                    margin-left: 425px;
-                                    z-index: 50;
-                                    position: absolute;
-                                        }
-
-.aisleHeading{
-    color: white;
+.aisleThree {
+  margin-top: -550px;
+  margin-left: 750px;
+  z-index: 50;
+  position: absolute;
 }
 
-.storeMapHeading{
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
+.aisleFour {
+  margin-top: -550px;
+  margin-left: 625px;
+  z-index: 50;
+  position: absolute;
 }
+
+.aisleFive {
+  margin-top: -550px;
+  margin-left: 500px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleSix {
+  margin-top: -325px;
+  margin-left: 1000px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleSeven {
+  margin-top: -325px;
+  margin-left: 875px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleEight {
+  margin-top: -325px;
+  margin-left: 750px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleNine {
+  margin-top: -325px;
+  margin-left: 625px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleTen {
+  margin-top: -325px;
+  margin-left: 500px;
+  z-index: 50;
+  position: absolute;
+}
+
+.aisleHeading {
+  color: white;
+}
+
+.storeMapHeading {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: roboto;
+   }
+
+   h3 {
+    font-size: 1em;
+    font-family: roboto;
+   }
